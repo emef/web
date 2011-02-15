@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load site_tags %}
+
+{% block title %} {{ post.title }} {% endblock %}
+
+{% block content %}
+
+{% render_partial "post.html" post:post user:user  %}
+
+{% endblock content %}

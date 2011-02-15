@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>notes</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-01-28 11:13:00 PST"/>
+<meta name="author" content="Matt Forbes"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">notes</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Chapter 1 </a>
+<ul>
+<li><a href="#sec-1_1">1.1 Network Hardware </a>
+<ul>
+<li><a href="#sec-1_1_1">1.1.1 Types of Transmission </a></li>
+<li><a href="#sec-1_1_2">1.1.2 Types of Networks </a></li>
+<li><a href="#sec-1_1_3">1.1.3 Types of Connections </a></li>
+<li><a href="#sec-1_1_4">1.1.4 Internetwork </a></li>
+<li><a href="#sec-1_1_5">1.1.5 Physical Medium </a></li>
+<li><a href="#sec-1_1_6">1.1.6 Statistical Multiplexing </a></li>
+</ul>
+</li>
+<li><a href="#sec-1_2">1.2 Flow Control </a></li>
+<li><a href="#sec-1_3">1.3 Protocol </a></li>
+<li><a href="#sec-1_4">1.4 Protocol Stack </a></li>
+<li><a href="#sec-1_5">1.5 Peers </a></li>
+<li><a href="#sec-1_6">1.6 Network Architecture </a></li>
+<li><a href="#sec-1_7">1.7 Service vs. Protocol </a></li>
+<li><a href="#sec-1_8">1.8 Types of Services </a>
+<ul>
+<li><a href="#sec-1_8_1">1.8.1 Datagram Service </a></li>
+<li><a href="#sec-1_8_2">1.8.2 Acknowledged Datagram </a></li>
+<li><a href="#sec-1_8_3">1.8.3 Request-Reply Service </a></li>
+</ul>
+</li>
+<li><a href="#sec-1_9">1.9 Open Systems Interconnection (OSI) </a>
+<ul>
+<li><a href="#sec-1_9_1">1.9.1 Physical Layer </a></li>
+<li><a href="#sec-1_9_2">1.9.2 Data Link Layer </a></li>
+<li><a href="#sec-1_9_3">1.9.3 Network Layer </a></li>
+<li><a href="#sec-1_9_4">1.9.4 Transport Layer </a></li>
+<li><a href="#sec-1_9_5">1.9.5 Session Layer </a></li>
+<li><a href="#sec-1_9_6">1.9.6 Presentation Layer </a></li>
+<li><a href="#sec-1_9_7">1.9.7 Application Layer </a></li>
+</ul>
+</li>
+<li><a href="#sec-1_10">1.10 TCP/IP Model </a>
+<ul>
+<li><a href="#sec-1_10_1">1.10.1 Application </a></li>
+<li><a href="#sec-1_10_2">1.10.2 Transport </a></li>
+<li><a href="#sec-1_10_3">1.10.3 Internet </a></li>
+<li><a href="#sec-1_10_4">1.10.4 Link </a></li>
+<li><a href="#sec-1_10_5">1.10.5 Physical </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Physical Layer </a>
+<ul>
+<li><a href="#sec-2_1">2.1 Bandwidth </a></li>
+<li><a href="#sec-2_2">2.2 Noise </a></li>
+<li><a href="#sec-2_3">2.3 Baseband </a></li>
+<li><a href="#sec-2_4">2.4 Passband </a></li>
+<li><a href="#sec-2_5">2.5 Guided Transmission Media </a>
+<ul>
+<li><a href="#sec-2_5_1">2.5.1 Twisted Pair </a></li>
+<li><a href="#sec-2_5_2">2.5.2 Coaxial Cable </a></li>
+<li><a href="#sec-2_5_3">2.5.3 Power Lines </a></li>
+<li><a href="#sec-2_5_4">2.5.4 Fiber Optics </a></li>
+<li><a href="#sec-2_5_5">2.5.5 Wireless </a></li>
+</ul>
+</li>
+<li><a href="#sec-2_6">2.6 Modulation </a>
+<ul>
+<li><a href="#sec-2_6_1">2.6.1 Amplitude Modulation </a></li>
+<li><a href="#sec-2_6_2">2.6.2 Frequency Modulation </a></li>
+<li><a href="#sec-2_6_3">2.6.3 Figure 2-43 </a></li>
+</ul>
+</li>
+<li><a href="#sec-2_7">2.7 Mobile Phones </a>
+<ul>
+<li><a href="#sec-2_7_1">2.7.1 1G Analog Voice </a></li>
+<li><a href="#sec-2_7_2">2.7.2 2G Digital Voice </a></li>
+<li><a href="#sec-2_7_3">2.7.3 3G Digital Voice &amp; Data </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Link Layer </a>
+<ul>
+<li><a href="#sec-3_1">3.1 Transmission Errors </a></li>
+<li><a href="#sec-3_2">3.2 Frames </a>
+<ul>
+<li><a href="#sec-3_2_1">3.2.1 Establishing Frames </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_3">3.3 Types of Service </a>
+<ul>
+<li><a href="#sec-3_3_1">3.3.1 Unacknowledged, connectionless </a></li>
+<li><a href="#sec-3_3_2">3.3.2 Acknowledged, connectionless </a></li>
+<li><a href="#sec-3_3_3">3.3.3 Connection Service </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_4">3.4 Error Control </a>
+<ul>
+<li><a href="#sec-3_4_1">3.4.1 Provide sender with feedback </a></li>
+<li><a href="#sec-3_4_2">3.4.2 Frame never reaches a frame </a></li>
+<li><a href="#sec-3_4_3">3.4.3 Correction </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_5">3.5 Protocols </a>
+<ul>
+<li><a href="#sec-3_5_1">3.5.1 Simple Protocol (stop and wait) </a></li>
+<li><a href="#sec-3_5_2">3.5.2 Sliding Window </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 adf </a>
+<ul>
+<li><a href="#sec-4_1">4.1 Types of Links </a>
+<ul>
+<li><a href="#sec-4_1_1">4.1.1 Point-to-point </a></li>
+<li><a href="#sec-4_1_2">4.1.2 Broadcast </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_2">4.2 CSMA/CD - Collisison Detection (Know this) </a></li>
+<li><a href="#sec-4_3">4.3 CSMA/CA - Collision Avoidance </a>
+<ul>
+<li><a href="#sec-4_3_1">4.3.1 RTS / CTS - request/clear to send </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Network Programming </a>
+<ul>
+<li><a href="#sec-5_1">5.1 netlib </a></li>
+<li><a href="#sec-5_2">5.2 NET ASCII line </a></li>
+<li><a href="#sec-5_3">5.3 HTTP Format </a>
+<ul>
+<li><a href="#sec-5_3_1">5.3.1 Request Line: </a></li>
+<li><a href="#sec-5_3_2">5.3.2 Response Format: </a></li>
+</ul>
+</li>
+<li><a href="#sec-5_4">5.4 Sockets </a>
+<ul>
+<li><a href="#sec-5_4_1">5.4.1 bind </a></li>
+<li><a href="#sec-5_4_2">5.4.2 listen </a></li>
+<li><a href="#sec-5_4_3">5.4.3 accept </a></li>
+<li><a href="#sec-5_4_4">5.4.4 connect </a></li>
+<li><a href="#sec-5_4_5">5.4.5 getpeername </a></li>
+<li><a href="#sec-5_4_6">5.4.6 gethostname </a></li>
+<li><a href="#sec-5_4_7">5.4.7 gethostbyname </a></li>
+<li><a href="#sec-5_4_8">5.4.8 gethostbyaddr </a></li>
+<li><a href="#sec-5_4_9">5.4.9 select </a></li>
+<li><a href="#sec-5_4_10">5.4.10 htonl, htons </a></li>
+<li><a href="#sec-5_4_11">5.4.11 ntohl, ntohs </a></li>
+<li><a href="#sec-5_4_12">5.4.12 ntoa </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Chapter 1 </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1_1" class="outline-3">
+<h3 id="sec-1_1"><span class="section-number-3">1.1</span> Network Hardware </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+</div>
+
+<div id="outline-container-1_1_1" class="outline-4">
+<h4 id="sec-1_1_1"><span class="section-number-4">1.1.1</span> Types of Transmission </h4>
+<div class="outline-text-4" id="text-1_1_1">
+
+<ul>
+<li id="sec-1_1_1_1">Point-to-point <br/>
+Single sender, single receiver. The packet may be passed along many
+sources before it reaches its destination. Telephone lines.
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_1_2">Broadcasting <br/>
+When the communication channel is shared by all computers on the
+network. packets are received by every computer, and have a field in
+the packet designating the intended receiver. wifi/ethernet fit in
+this category.
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_1_3">Multicasting <br/>
+Like broadcasting, but only transmitting to a subset of the machines
+on the network.
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_1_4">Packet <br/>
+'short' block of data sent/received by network. Size of the packet is
+hardware-defined.
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1_1_2" class="outline-4">
+<h4 id="sec-1_1_2"><span class="section-number-4">1.1.2</span> Types of Networks </h4>
+<div class="outline-text-4" id="text-1_1_2">
+
+<ul>
+<li id="sec-1_1_2_1">Personal Area Network (PAN) <br/>
+Networks that are very short-ranged (within reach usually.) Bluetooth
+is a good example, which creates a very simple master-slave network in
+which all peripheral bluetooth devices connect to the master
+(computer, car, etc.)
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_2_2">Wide Area Network (WAN) <br/>
+WANs cover large geographic regions (countries even) and work very
+similarly to LANs or MANs, just on a larger scale. In a WAN, there
+will be several hosts (computers running user programs), and the
+communication subnet. The subnet is a collection of transmission lines
+and switches (routers) the move data between the hosts.
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_2_3">Virtual Private Networks (VPN) <br/>
+Many individual networks at different site joined together to create
+the effect of one large network that includes all of the users in each
+network
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1_1_3" class="outline-4">
+<h4 id="sec-1_1_3"><span class="section-number-4">1.1.3</span> Types of Connections </h4>
+<div class="outline-text-4" id="text-1_1_3">
+
+<ul>
+<li id="sec-1_1_3_1">Connection-Oriented Services <br/>
+Sockets and telephones work in this way. You first open a connection,
+use it for some time, and finally close it when you're done. Data
+transmission is done through a type of pipe, where the sender pushes
+data in to the pipe, and the receiver pulls it out.
+</li>
+</ul>
+<ul>
+<li id="sec-1_1_3_2">Connectionless Services <br/>
+Rather than having a designated sender/receiver, all messages using
+this type of service have the absolute address of the
+recipient. Messages are routed through connected nodes in the system
+until they reach their destination.
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1_1_4" class="outline-4">
+<h4 id="sec-1_1_4"><span class="section-number-4">1.1.4</span> Internetwork </h4>
+<div class="outline-text-4" id="text-1_1_4">
+
+<p>The connection of two or more networks. Internet is the best-known
+internetwork.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_1_5" class="outline-4">
+<h4 id="sec-1_1_5"><span class="section-number-4">1.1.5</span> Physical Medium </h4>
+<div class="outline-text-4" id="text-1_1_5">
+
+<p>Peers across different machines will not directly share data. Instead,
+they will pass information to the layer below it until it reaches the
+bottom, the physical medium. Here is where the actual transmission
+occurs.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_1_6" class="outline-4">
+<h4 id="sec-1_1_6"><span class="section-number-4">1.1.6</span> Statistical Multiplexing </h4>
+<div class="outline-text-4" id="text-1_1_6">
+
+<p>Networks provide a service to the connected hosts with their available
+resources such as bandwidth. To be efficient, the network must have
+some way to divide the resources in a way that doesn't interfere with
+other hosts. Sharing the resources dynamically is called is
+statistical multiplexing based on demand. 
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1_2" class="outline-3">
+<h3 id="sec-1_2"><span class="section-number-3">1.2</span> Flow Control </h3>
+<div class="outline-text-3" id="text-1_2">
+
+<p>When fast-sending connections swamp a very slow receiver, flow control
+is used to provide feedback to the origin of the transmission. It is
+like a warning to slow dow
+</p></div>
+
+</div>
+
+<div id="outline-container-1_3" class="outline-3">
+<h3 id="sec-1_3"><span class="section-number-3">1.3</span> Protocol </h3>
+<div class="outline-text-3" id="text-1_3">
+
+<p>Agreement between communicating parties on how communcations should
+proceed. 
+</p></div>
+
+</div>
+
+<div id="outline-container-1_4" class="outline-3">
+<h3 id="sec-1_4"><span class="section-number-3">1.4</span> Protocol Stack </h3>
+<div class="outline-text-3" id="text-1_4">
+
+<p>A list of protocols used by each layer in a certain system, one
+protocol per layer.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_5" class="outline-3">
+<h3 id="sec-1_5"><span class="section-number-3">1.5</span> Peers </h3>
+<div class="outline-text-3" id="text-1_5">
+
+<p>Entities that are communicating using some protocol. When a network is
+comprised of multiple layers, peers would be the software or hardware
+on the same layer that communicate using some protocol.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_6" class="outline-3">
+<h3 id="sec-1_6"><span class="section-number-3">1.6</span> Network Architecture </h3>
+<div class="outline-text-3" id="text-1_6">
+
+<p>Simply the set of layers that comprise a network. A specification
+should include enough information for an implementer to write the
+program/build hardware for each layer so it will follow the specified
+protocol.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_7" class="outline-3">
+<h3 id="sec-1_7"><span class="section-number-3">1.7</span> Service vs. Protocol </h3>
+<div class="outline-text-3" id="text-1_7">
+
+<p>Simply put, a service is a set of primitives (operations) that it
+makes available to the layer above it. It is a definition of the
+operation it is prepared to make on behalf of the layer above.
+</p>
+<p>
+A protocol is a set of rules that govern the format and meaning of the
+messages/packets that are exchanged between peer entities on a layer.
+</p>
+<p>
+Entities use protocols to implement services. For this reason
+protocols can change to any degree, as long as the primitives the
+service provides do not change.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_8" class="outline-3">
+<h3 id="sec-1_8"><span class="section-number-3">1.8</span> Types of Services </h3>
+<div class="outline-text-3" id="text-1_8">
+
+
+</div>
+
+<div id="outline-container-1_8_1" class="outline-4">
+<h4 id="sec-1_8_1"><span class="section-number-4">1.8.1</span> Datagram Service </h4>
+<div class="outline-text-4" id="text-1_8_1">
+
+<p>This service is unreliable because there is no acknowledgement that a
+packet was received. Usually there is a high probability that the
+message will be received but no guarantee. 
+</p></div>
+
+</div>
+
+<div id="outline-container-1_8_2" class="outline-4">
+<h4 id="sec-1_8_2"><span class="section-number-4">1.8.2</span> Acknowledged Datagram </h4>
+<div class="outline-text-4" id="text-1_8_2">
+
+<p>When an established connection isn't necessary, you can use the
+datagram service but request a "receipt" that reassures the sender
+that message was definitely received.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_8_3" class="outline-4">
+<h4 id="sec-1_8_3"><span class="section-number-4">1.8.3</span> Request-Reply Service </h4>
+<div class="outline-text-4" id="text-1_8_3">
+
+<p>A client sends a single message to the server, and it responds with a
+single message response.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1_9" class="outline-3">
+<h3 id="sec-1_9"><span class="section-number-3">1.9</span> Open Systems Interconnection (OSI) </h3>
+<div class="outline-text-3" id="text-1_9">
+
+<p>This is a standardized model whos structure is important, but the
+actual protocols are no longer used. It has seven layers which were
+designed to separate well-defined functions while keeping the number
+of layers manageable. 
+</p>
+</div>
+
+<div id="outline-container-1_9_1" class="outline-4">
+<h4 id="sec-1_9_1"><span class="section-number-4">1.9.1</span> Physical Layer </h4>
+<div class="outline-text-4" id="text-1_9_1">
+
+<p>Transmits raw bits over a communication channel. Its purpose is to
+make sure each bit sent as a 0 is received as a 0, the implementation
+is in charge of handling the mechanical/electrical aspect of the
+transportation.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_2" class="outline-4">
+<h4 id="sec-1_9_2"><span class="section-number-4">1.9.2</span> Data Link Layer </h4>
+<div class="outline-text-4" id="text-1_9_2">
+
+<p>This layer is charged with transforming raw transmission of data in to
+an apparently error-free line. It should hide the error-handling
+implementation from the layer above, and only allow correct packets to
+bubble up.
+</p>
+<p>
+To accomplish this by having the sender break up the input data in to
+data frames (some arbitrary number of bytes) and transmit these frames
+sequentially. When the service needs to be reliable, the receiver must
+confirm by replying with an acknowledgment frame.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_3" class="outline-4">
+<h4 id="sec-1_9_3"><span class="section-number-4">1.9.3</span> Network Layer </h4>
+<div class="outline-text-4" id="text-1_9_3">
+
+<p>Controlling the operations of the subnet is the responsibility of the
+network layer. A key issue is determining how packets are routed,
+which path they should take from a source to its destination. Routes
+can be hardcoded in a static table, dynamically calculated for each
+connection, or some medium between. 
+</p>
+<p>
+Congestion can be caused when there are too many packets in the
+subnet, and the network layer's job is to make sure this doesn't
+happen. In general, the Quality of Service (QoS) is an issue of the
+network layer.
+</p>
+<p>
+Finally, sending packets between multiple networks can also be
+problematic; the receiving network may use a different protocol, have
+packet length limits, etc. The network layer should handle these
+possible errors and correct them seamlessly.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_4" class="outline-4">
+<h4 id="sec-1_9_4"><span class="section-number-4">1.9.4</span> Transport Layer </h4>
+<div class="outline-text-4" id="text-1_9_4">
+
+<p>The transport layer communicates directly with the connected
+entity. It should take data from the layer above, break it up (if
+needed), and then send it to the network layer. Furthermore, it should
+make sure that all the data was sent/received correctly in a way that
+shouldn't be noticeable to the layers above it. The communication is
+not impeded by routers imbetween like layers below, it should have a
+direct line to the destination machine.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_5" class="outline-4">
+<h4 id="sec-1_9_5"><span class="section-number-4">1.9.5</span> Session Layer </h4>
+<div class="outline-text-4" id="text-1_9_5">
+
+<p>A session offers various services like dialog control (as in
+conversation, whos turn it is to talk), token management (don't let
+multiple parties attempt the same critical operation at the same
+time), and synchronization (allowing long transmissions to be picked
+up where they left off in the event of a crash or disconnect).
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_6" class="outline-4">
+<h4 id="sec-1_9_6"><span class="section-number-4">1.9.6</span> Presentation Layer </h4>
+<div class="outline-text-4" id="text-1_9_6">
+
+<p>While other layers are concerned with moving bits around, this layer
+dicates the syntax and semantics of that information. This is
+important for computers that have different data represntations. An
+abstract and standard encoding can be used and interpreted by any peer
+that knows the protocol.
+</p></div>
+
+</div>
+
+<div id="outline-container-1_9_7" class="outline-4">
+<h4 id="sec-1_9_7"><span class="section-number-4">1.9.7</span> Application Layer </h4>
+<div class="outline-text-4" id="text-1_9_7">
+
+<p>Here is the final layer that contains protocols that are needed and
+used by actual users. For example the HTTP protocol would be
+applicable, as it is the highest-level protocol used in the stack.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1_10" class="outline-3">
+<h3 id="sec-1_10"><span class="section-number-3">1.10</span> TCP/IP Model </h3>
+<div class="outline-text-3" id="text-1_10">
+
+
+</div>
+
+<div id="outline-container-1_10_1" class="outline-4">
+<h4 id="sec-1_10_1"><span class="section-number-4">1.10.1</span> Application </h4>
+<div class="outline-text-4" id="text-1_10_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1_10_2" class="outline-4">
+<h4 id="sec-1_10_2"><span class="section-number-4">1.10.2</span> Transport </h4>
+<div class="outline-text-4" id="text-1_10_2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1_10_3" class="outline-4">
+<h4 id="sec-1_10_3"><span class="section-number-4">1.10.3</span> Internet </h4>
+<div class="outline-text-4" id="text-1_10_3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1_10_4" class="outline-4">
+<h4 id="sec-1_10_4"><span class="section-number-4">1.10.4</span> Link </h4>
+<div class="outline-text-4" id="text-1_10_4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1_10_5" class="outline-4">
+<h4 id="sec-1_10_5"><span class="section-number-4">1.10.5</span> Physical </h4>
+<div class="outline-text-4" id="text-1_10_5">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Physical Layer </h2>
+<div class="outline-text-2" id="text-2">
+
+<p>Information transmitted by varying some physical property. In books,
+the ink varies; in wires we can vary voltage, current, etc.,
+fiberoptics vary lights.
+</p>
+</div>
+
+<div id="outline-container-2_1" class="outline-3">
+<h3 id="sec-2_1"><span class="section-number-3">2.1</span> Bandwidth </h3>
+<div class="outline-text-3" id="text-2_1">
+
+<p>Hardware has an affect on different frequencies, and the width of that
+frequency range is called bandwidth. Square waves have a lot of higher
+harmonics, but a small bandwidth removes a lot of harmonics.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2" class="outline-3">
+<h3 id="sec-2_2"><span class="section-number-3">2.2</span> Noise </h3>
+<div class="outline-text-3" id="text-2_2">
+
+<p>Random variations in a signal that wasn't caused by the source.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_3" class="outline-3">
+<h3 id="sec-2_3"><span class="section-number-3">2.3</span> Baseband </h3>
+<div class="outline-text-3" id="text-2_3">
+
+<p>Signals from 0 to max frequency
+</p></div>
+
+</div>
+
+<div id="outline-container-2_4" class="outline-3">
+<h3 id="sec-2_4"><span class="section-number-3">2.4</span> Passband </h3>
+<div class="outline-text-3" id="text-2_4">
+
+<p>Signals shifted occupy a higher frequency
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2_5" class="outline-3">
+<h3 id="sec-2_5"><span class="section-number-3">2.5</span> Guided Transmission Media </h3>
+<div class="outline-text-3" id="text-2_5">
+
+
+</div>
+
+<div id="outline-container-2_5_1" class="outline-4">
+<h4 id="sec-2_5_1"><span class="section-number-4">2.5.1</span> Twisted Pair </h4>
+<div class="outline-text-4" id="text-2_5_1">
+
+<p>Usually two thin copper wires twisted to make give them similar
+noise. If they were separated, radiation would create different
+amounts of noise in each wire.
+</p><ul>
+<li id="sec-2_5_1_1">Simplex <br/>
+One transmitter sends data across the twisted pair to the
+receiver. Essentially just a one way wire.
+</li>
+</ul>
+<ul>
+<li id="sec-2_5_1_2">Half-Duplex <br/>
+One twisted pair, where the transmitter/receiver switch roles, so its
+one way at a time, but the direction can change.
+</li>
+</ul>
+<ul>
+<li id="sec-2_5_1_3">Full-Duplex <br/>
+Two pairs, concurrent data in both directions.
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2_5_2" class="outline-4">
+<h4 id="sec-2_5_2"><span class="section-number-4">2.5.2</span> Coaxial Cable </h4>
+<div class="outline-text-4" id="text-2_5_2">
+
+<p>Cable TV wires, used in original ethernet.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_5_3" class="outline-4">
+<h4 id="sec-2_5_3"><span class="section-number-4">2.5.3</span> Power Lines </h4>
+<div class="outline-text-4" id="text-2_5_3">
+
+<p>Actually possible to transmit data across power lines, high bandwidth
+but high voltage (dangerous).
+</p></div>
+
+</div>
+
+<div id="outline-container-2_5_4" class="outline-4">
+<h4 id="sec-2_5_4"><span class="section-number-4">2.5.4</span> Fiber Optics </h4>
+<div class="outline-text-4" id="text-2_5_4">
+
+<p>Long haul transmission (long distance?) Different modes, single/multi
+where it would be one-way or two-way. In single mode, you can send
+100Gbps over 100km. 
+</p></div>
+
+</div>
+
+<div id="outline-container-2_5_5" class="outline-4">
+<h4 id="sec-2_5_5"><span class="section-number-4">2.5.5</span> Wireless </h4>
+<div class="outline-text-4" id="text-2_5_5">
+
+<p>Uses the radio spectrum (10**4Hz to 10**16Hz) of frequencies. 
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-2_6" class="outline-3">
+<h3 id="sec-2_6"><span class="section-number-3">2.6</span> Modulation </h3>
+<div class="outline-text-3" id="text-2_6">
+
+<p>A change in signal to encode information (modulation). Extracting
+information from a signal (demodulation). You can do both analog and
+digital modulation. Modulation takes the carrier wave (medium of
+transmission) and bends it to represent the data that needs to be
+sent.
+</p>
+</div>
+
+<div id="outline-container-2_6_1" class="outline-4">
+<h4 id="sec-2_6_1"><span class="section-number-4">2.6.1</span> Amplitude Modulation </h4>
+<div class="outline-text-4" id="text-2_6_1">
+
+<p>Change the amplitude of the wave to match a sine wave (for analog) or
+for bit data (digital).
+</p></div>
+
+</div>
+
+<div id="outline-container-2_6_2" class="outline-4">
+<h4 id="sec-2_6_2"><span class="section-number-4">2.6.2</span> Frequency Modulation </h4>
+<div class="outline-text-4" id="text-2_6_2">
+
+<p>Modifying the frequency to be interpreted as a sine wave or bit
+data. For bit data you could have two frequencies, one to represent 0
+and one for 1.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2_6_3" class="outline-4">
+<h4 id="sec-2_6_3"><span class="section-number-4">2.6.3</span> Figure 2-43 </h4>
+<div class="outline-text-4" id="text-2_6_3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2_7" class="outline-3">
+<h3 id="sec-2_7"><span class="section-number-3">2.7</span> Mobile Phones </h3>
+<div class="outline-text-3" id="text-2_7">
+
+
+</div>
+
+<div id="outline-container-2_7_1" class="outline-4">
+<h4 id="sec-2_7_1"><span class="section-number-4">2.7.1</span> 1G Analog Voice </h4>
+<div class="outline-text-4" id="text-2_7_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2_7_2" class="outline-4">
+<h4 id="sec-2_7_2"><span class="section-number-4">2.7.2</span> 2G Digital Voice </h4>
+<div class="outline-text-4" id="text-2_7_2">
+
+<p>GSM, SIM cards. Used both FDM (frequency division) and TDM (time division) for multiple channels
+</p></div>
+
+</div>
+
+<div id="outline-container-2_7_3" class="outline-4">
+<h4 id="sec-2_7_3"><span class="section-number-4">2.7.3</span> 3G Digital Voice &amp; Data </h4>
+<div class="outline-text-4" id="text-2_7_3">
+
+<p>Uses CDMA (code division multiple access)
+</p></div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Link Layer </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3_1" class="outline-3">
+<h3 id="sec-3_1"><span class="section-number-3">3.1</span> Transmission Errors </h3>
+<div class="outline-text-3" id="text-3_1">
+
+<p>Drop bits, add bits, change bits. This layer should effectively hide
+these from the network layer.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2" class="outline-3">
+<h3 id="sec-3_2"><span class="section-number-3">3.2</span> Frames </h3>
+<div class="outline-text-3" id="text-3_2">
+
+<p>Chunks that the bitstream is broken down in to. Some arbitrary agreed
+upon size.
+</p>
+</div>
+
+<div id="outline-container-3_2_1" class="outline-4">
+<h4 id="sec-3_2_1"><span class="section-number-4">3.2.1</span> Establishing Frames </h4>
+<div class="outline-text-4" id="text-3_2_1">
+
+<ul>
+<li id="sec-3_2_1_1">Character Count <br/>
+Breaks the message up in to sequences of bytes, prepending a byte that
+notes the total bytes in the frame (including byte count). An error in
+the byte count throws off the whole frame structure (ie. 5 -&gt; 24).
+</li>
+</ul>
+<ul>
+<li id="sec-3_2_1_2">Start/End Characters <br/>
+Uses "byte stuffing". In ASCII, there are special characters DLE (data
+link escape), SOH (start of header), and EOT(end of
+transmission). Each frame has [DLE][SOH] &hellip; [DLE][SOH]. 
+<ul>
+<li id="sec-3_2_1_2_1">Problems <br/>
+Binary data can accidentally trigger an end of frame by having a DLE
+bit pattern. To remedy this, "byte stuffing" is used. When
+transmitting binary data, if it sees a DLE bit pattern, it "stuffs" a
+second one next to it. Then when the receiver parses the data, it can
+remove the extras.
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-3_2_1_3">Start/End Bit Patterns <br/>
+Uses "bit stuffing". Frames start with 0x7E, when it sees 5 '1' bits
+in a row, add a '0'.
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_3" class="outline-3">
+<h3 id="sec-3_3"><span class="section-number-3">3.3</span> Types of Service </h3>
+<div class="outline-text-3" id="text-3_3">
+
+
+</div>
+
+<div id="outline-container-3_3_1" class="outline-4">
+<h4 id="sec-3_3_1"><span class="section-number-4">3.3.1</span> Unacknowledged, connectionless </h4>
+<div class="outline-text-4" id="text-3_3_1">
+
+<p>No attempt to detect or correct errors. Can be used effectively over a
+very reliable medium for large data where errors do not matter much.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_3_2" class="outline-4">
+<h4 id="sec-3_3_2"><span class="section-number-4">3.3.2</span> Acknowledged, connectionless </h4>
+<div class="outline-text-4" id="text-3_3_2">
+
+<p>Each frame is acknowledged by the receiver. When the receiving data
+link layer reads a layer, it can ask for a retransmit
+</p></div>
+
+</div>
+
+<div id="outline-container-3_3_3" class="outline-4">
+<h4 id="sec-3_3_3"><span class="section-number-4">3.3.3</span> Connection Service </h4>
+<div class="outline-text-4" id="text-3_3_3">
+
+<p>Sender, receiver establish a connection. Frames are numbered, and
+transmitted in order.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3_4" class="outline-3">
+<h3 id="sec-3_4"><span class="section-number-3">3.4</span> Error Control </h3>
+<div class="outline-text-3" id="text-3_4">
+
+
+</div>
+
+<div id="outline-container-3_4_1" class="outline-4">
+<h4 id="sec-3_4_1"><span class="section-number-4">3.4.1</span> Provide sender with feedback </h4>
+<div class="outline-text-4" id="text-3_4_1">
+
+<p>Positive/negative acknowledgement after receiving a frame.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_4_2" class="outline-4">
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> Frame never reaches a frame </h4>
+<div class="outline-text-4" id="text-3_4_2">
+
+<p>Sender has a timeout period, if hit hasn't had an acknowledgement at
+the end of the timeout, it will resend the frame. Can result in
+mutliple copies if the receiver was just too slow to respond.
+</p><ul>
+<li id="sec-3_4_2_1">Detection <br/>
+Add redundancy to the data.
+<ul>
+<li id="sec-3_4_2_1_1">Parity <br/>
+First bit says whether there are even/odd bits in the byte.
+</li>
+</ul>
+<ul>
+<li id="sec-3_4_2_1_2">Checksums <br/>
+-#- Learn for test.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_3" class="outline-4">
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> Correction </h4>
+<div class="outline-text-4" id="text-3_4_3">
+
+<p>Upon detecting an error, it can fix the error on its own without a
+retransmission.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3_5" class="outline-3">
+<h3 id="sec-3_5"><span class="section-number-3">3.5</span> Protocols </h3>
+<div class="outline-text-3" id="text-3_5">
+
+
+</div>
+
+<div id="outline-container-3_5_1" class="outline-4">
+<h4 id="sec-3_5_1"><span class="section-number-4">3.5.1</span> Simple Protocol (stop and wait) </h4>
+<div class="outline-text-4" id="text-3_5_1">
+
+<p>Data &ndash;&gt; &hellip; &lt;&ndash; ACK
+No ACK back, assumes that it didn't get there. Retransmit.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_5_2" class="outline-4">
+<h4 id="sec-3_5_2"><span class="section-number-4">3.5.2</span> Sliding Window </h4>
+<div class="outline-text-4" id="text-3_5_2">
+
+<ul>
+<li id="sec-3_5_2_1">Window - buffer <br/>
+Fixed size of bytes/packets. Can send all these packets without an
+ACK. Sender retains copies of the packets until receives ACK, will
+resend those that it didn't receive. When the ACKs have been received
+it can discard the packets. "ACK n" specifies that they received ALL
+packets up to packet n.
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> adf </h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4_1" class="outline-3">
+<h3 id="sec-4_1"><span class="section-number-3">4.1</span> Types of Links </h3>
+<div class="outline-text-3" id="text-4_1">
+
+
+</div>
+
+<div id="outline-container-4_1_1" class="outline-4">
+<h4 id="sec-4_1_1"><span class="section-number-4">4.1.1</span> Point-to-point </h4>
+<div class="outline-text-4" id="text-4_1_1">
+
+<p>Typically long distance, single connection from machine to machine.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_1_2" class="outline-4">
+<h4 id="sec-4_1_2"><span class="section-number-4">4.1.2</span> Broadcast </h4>
+<div class="outline-text-4" id="text-4_1_2">
+
+<p>Typically local area. 
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_2" class="outline-3">
+<h3 id="sec-4_2"><span class="section-number-3">4.2</span> CSMA/CD - Collisison Detection (Know this) </h3>
+<div class="outline-text-3" id="text-4_2">
+
+<p>Standard Ethernet Protocol. Carrier Sense Multiple Access. Exponential
+backoff time when collisions are detected.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_3" class="outline-3">
+<h3 id="sec-4_3"><span class="section-number-3">4.3</span> CSMA/CA - Collision Avoidance </h3>
+<div class="outline-text-3" id="text-4_3">
+
+
+</div>
+
+<div id="outline-container-4_3_1" class="outline-4">
+<h4 id="sec-4_3_1"><span class="section-number-4">4.3.1</span> RTS / CTS - request/clear to send </h4>
+<div class="outline-text-4" id="text-4_3_1">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Network Programming </h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5_1" class="outline-3">
+<h3 id="sec-5_1"><span class="section-number-3">5.1</span> netlib </h3>
+<div class="outline-text-3" id="text-5_1">
+
+<p>Simple interface for client/server communication.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2" class="outline-3">
+<h3 id="sec-5_2"><span class="section-number-3">5.2</span> NET ASCII line </h3>
+<div class="outline-text-3" id="text-5_2">
+
+<p>A series of characters followed by \r\n
+</p></div>
+
+</div>
+
+<div id="outline-container-5_3" class="outline-3">
+<h3 id="sec-5_3"><span class="section-number-3">5.3</span> HTTP Format </h3>
+<div class="outline-text-3" id="text-5_3">
+
+
+</div>
+
+<div id="outline-container-5_3_1" class="outline-4">
+<h4 id="sec-5_3_1"><span class="section-number-4">5.3.1</span> Request Line: </h4>
+<div class="outline-text-4" id="text-5_3_1">
+
+<p>ex: GET path HTTP/1.0
+</p></div>
+
+</div>
+
+<div id="outline-container-5_3_2" class="outline-4">
+<h4 id="sec-5_3_2"><span class="section-number-4">5.3.2</span> Response Format: </h4>
+<div class="outline-text-4" id="text-5_3_2">
+
+<p>ex: HTTP/1.0 number message
+Server: &lt;name&gt;
+Content-Length: &lt;bytes&gt;
+Content-Type: &lt;mime-type&gt;
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5_4" class="outline-3">
+<h3 id="sec-5_4"><span class="section-number-3">5.4</span> Sockets </h3>
+<div class="outline-text-3" id="text-5_4">
+
+
+</div>
+
+<div id="outline-container-5_4_1" class="outline-4">
+<h4 id="sec-5_4_1"><span class="section-number-4">5.4.1</span> bind </h4>
+<div class="outline-text-4" id="text-5_4_1">
+
+<p>Usually on a server, binds a server to an address/port.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_2" class="outline-4">
+<h4 id="sec-5_4_2"><span class="section-number-4">5.4.2</span> listen </h4>
+<div class="outline-text-4" id="text-5_4_2">
+
+<p>Set queue size.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_3" class="outline-4">
+<h4 id="sec-5_4_3"><span class="section-number-4">5.4.3</span> accept </h4>
+<div class="outline-text-4" id="text-5_4_3">
+
+<p>Gets or waits for the first connection in the queue. Returns a socket
+of the connected client. Fills in client information in sockaddr if
+given.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_4" class="outline-4">
+<h4 id="sec-5_4_4"><span class="section-number-4">5.4.4</span> connect </h4>
+<div class="outline-text-4" id="text-5_4_4">
+
+<p>Client version, just connects to a program that is listening on the
+address given.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_5" class="outline-4">
+<h4 id="sec-5_4_5"><span class="section-number-4">5.4.5</span> getpeername </h4>
+<div class="outline-text-4" id="text-5_4_5">
+
+<p>Given a socket, returns a sockaddr with info about connection.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_6" class="outline-4">
+<h4 id="sec-5_4_6"><span class="section-number-4">5.4.6</span> gethostname </h4>
+<div class="outline-text-4" id="text-5_4_6">
+
+<p>Gets the current host name (of local machine)
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_7" class="outline-4">
+<h4 id="sec-5_4_7"><span class="section-number-4">5.4.7</span> gethostbyname </h4>
+<div class="outline-text-4" id="text-5_4_7">
+
+<p>Gets ip host information block for some other machine.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_8" class="outline-4">
+<h4 id="sec-5_4_8"><span class="section-number-4">5.4.8</span> gethostbyaddr </h4>
+<div class="outline-text-4" id="text-5_4_8">
+
+<p>Gets ip host information for some sockaddr. Man page confusing
+(wrong?). The addr needs to be a pointer to in<sub>addr</sub> NOT a
+char*. Family is AF<sub>INET</sub>.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_9" class="outline-4">
+<h4 id="sec-5_4_9"><span class="section-number-4">5.4.9</span> select </h4>
+<div class="outline-text-4" id="text-5_4_9">
+
+<p>Sleeps until one of the given sockets is ready to read/write.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_10" class="outline-4">
+<h4 id="sec-5_4_10"><span class="section-number-4">5.4.10</span> htonl, htons </h4>
+<div class="outline-text-4" id="text-5_4_10">
+
+<p>Converts longs/shorts respectively from host endian to network endian.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_11" class="outline-4">
+<h4 id="sec-5_4_11"><span class="section-number-4">5.4.11</span> ntohl, ntohs </h4>
+<div class="outline-text-4" id="text-5_4_11">
+
+<p>Converts longs/shorts respectively network endian to host endian.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_4_12" class="outline-4">
+<h4 id="sec-5_4_12"><span class="section-number-4">5.4.12</span> ntoa </h4>
+<div class="outline-text-4" id="text-5_4_12">
+
+<p>Network endian ip to ascii.
+</p></div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Matt Forbes
+</p>
+<p class="date"> Date: 2011-01-28 11:13:00 PST</p>
+<p class="creator">HTML generated by org-mode 7.4 in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

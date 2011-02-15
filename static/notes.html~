@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>notes.org</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-01-15 Sat"/>
+<meta name="author" content="Matt Forbes"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+
+<link rel="stylesheet" type="text/css" href="css/org.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">notes.org</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Introduction - Chapter 1 </a>
+<ul>
+<li><a href="#sec-1_1">1.1 Summary </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Intelligent Agents - Chapter 2 </a>
+<ul>
+<li><a href="#sec-2_1">2.1 Summary </a></li>
+<li><a href="#sec-2_2">2.2 Chapter Notes </a>
+<ul>
+<li><a href="#sec-2_2_1">2.2.1 PEAS </a></li>
+<li><a href="#sec-2_2_2">2.2.2 Agent </a></li>
+<li><a href="#sec-2_2_3">2.2.3 Agent Function </a></li>
+<li><a href="#sec-2_2_4">2.2.4 Agent Program </a></li>
+<li><a href="#sec-2_2_5">2.2.5 Rationality </a></li>
+<li><a href="#sec-2_2_6">2.2.6 Autonomy </a></li>
+<li><a href="#sec-2_2_7">2.2.7 Reflex Agent </a></li>
+<li><a href="#sec-2_2_8">2.2.8 Model-Based Agent </a></li>
+<li><a href="#sec-2_2_9">2.2.9 Goal-Based Agent </a></li>
+<li><a href="#sec-2_2_10">2.2.10 Utility-Based Agent </a></li>
+<li><a href="#sec-2_2_11">2.2.11 Learning Agent </a></li>
+</ul>
+</li>
+<li><a href="#sec-2_3">2.3 Chapter Exercises </a>
+<ul>
+<li><a href="#sec-2_3_1">2.3.1 Problem 2.2 </a></li>
+<li><a href="#sec-2_3_2">2.3.2 Problem 2.3 </a></li>
+<li><a href="#sec-2_3_3">2.3.3 Problem 2.5 </a></li>
+<li><a href="#sec-2_3_4">2.3.4 Problem 2.6 </a></li>
+</ul>
+</li>
+<li><a href="#sec-2_4">2.4 Programming </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Uninformed Search - Chapter 3 </a>
+<ul>
+<li><a href="#sec-3_1">3.1 Summary </a></li>
+<li><a href="#sec-3_2">3.2 Chapter Notes </a>
+<ul>
+<li><a href="#sec-3_2_1">3.2.1 state </a></li>
+<li><a href="#sec-3_2_2">3.2.2 state space </a></li>
+<li><a href="#sec-3_2_3">3.2.3 search tree </a></li>
+<li><a href="#sec-3_2_4">3.2.4 search node </a></li>
+<li><a href="#sec-3_2_5">3.2.5 goal </a></li>
+<li><a href="#sec-3_2_6">3.2.6 action </a></li>
+<li><a href="#sec-3_2_7">3.2.7 successor function </a></li>
+<li><a href="#sec-3_2_8">3.2.8 branching factor </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_3">3.3 Chapter Exercises </a>
+<ul>
+<li><a href="#sec-3_3_1">3.3.1 Problem 3.2 </a></li>
+<li><a href="#sec-3_3_2">3.3.2 Problem 3.3 </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Informed (Heuristics) Search - Chapter 4 </a>
+<ul>
+<li><a href="#sec-4_1">4.1 Summary </a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Knowledge Representation - Chapter 10 </a>
+<ul>
+<li><a href="#sec-5_1">5.1 Summary </a></li>
+<li><a href="#sec-5_2">5.2 Chapter Notes </a>
+<ul>
+<li><a href="#sec-5_2_1">5.2.1 Ontological Engineering </a></li>
+<li><a href="#sec-5_2_2">5.2.2 Categories </a></li>
+<li><a href="#sec-5_2_3">5.2.3 Disjoint Categories </a></li>
+<li><a href="#sec-5_2_4">5.2.4 Exhaustive Decomposition </a></li>
+<li><a href="#sec-5_2_5">5.2.5 Partition </a></li>
+<li><a href="#sec-5_2_6">5.2.6 Bunch </a></li>
+<li><a href="#sec-5_2_7">5.2.7 Measurement Objects </a></li>
+<li><a href="#sec-5_2_8">5.2.8 Intrinsic Properties </a></li>
+<li><a href="#sec-5_2_9">5.2.9 Extrinsic Properties </a></li>
+<li><a href="#sec-5_2_10">5.2.10 Mass Nouns (Substance) </a></li>
+<li><a href="#sec-5_2_11">5.2.11 Count Nouns (Thing) </a></li>
+<li><a href="#sec-5_2_12">5.2.12 Situation Calculus </a></li>
+<li><a href="#sec-5_2_13">5.2.13 Situations </a></li>
+<li><a href="#sec-5_2_14">5.2.14 Fluents </a></li>
+<li><a href="#sec-5_2_15">5.2.15 Atemporal Predicates and Functions </a></li>
+<li><a href="#sec-5_2_16">5.2.16 Projection </a></li>
+<li><a href="#sec-5_2_17">5.2.17 Planning </a></li>
+<li><a href="#sec-5_2_18">5.2.18 Possibility Axiom </a></li>
+<li><a href="#sec-5_2_19">5.2.19 Effect Axiom </a></li>
+</ul>
+</li>
+<li><a href="#sec-5_3">5.3 Chapter Exercises </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction - Chapter 1 </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1_1" class="outline-3">
+<h3 id="sec-1_1"><span class="section-number-3">1.1</span> Summary </h3>
+<div class="outline-text-3" id="text-1_1">
+
+<p>This chapter covered the background of AI and how it became what it is
+today. It explored the various meanings of the term "AI", one of which
+is the idea of a "rational agent," which is what it means in this
+book. Following the definition of the term, we get a history lesson on
+the components and events that led to AI becoming a field of
+study. Finally, we see the transitions of AI through industry and
+science.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Intelligent Agents - Chapter 2 </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2_1" class="outline-3">
+<h3 id="sec-2_1"><span class="section-number-3">2.1</span> Summary </h3>
+<div class="outline-text-3" id="text-2_1">
+
+<p>This chapter focuses on the definition of an intelligent agent. An
+agent is any entity capable of acting on its environment, and an
+intelligent agent is one that makes decisions that maximize progress
+towards some goal, even when the path to that goal is not clear. It
+also discusses ways that we can judge the successfulness of actions
+that such an agent performs. Agents must be designed for the specific
+type of environment it will be acting on, and there are quite a few
+important characteristics that change the decision-making processes of
+the agent; such as how much of the environment the agent "sees,"
+whether there are factors out of the agent's control, if it is
+sequential or episodic, etc. Finally we learn about the general
+structure of an agent program and the different types of agents. It
+almost seems silly to distinguish between some of them because the
+differences are very subtle. 
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2" class="outline-3">
+<h3 id="sec-2_2"><span class="section-number-3">2.2</span> Chapter Notes </h3>
+<div class="outline-text-3" id="text-2_2">
+
+
+</div>
+
+<div id="outline-container-2_2_1" class="outline-4">
+<h4 id="sec-2_2_1"><span class="section-number-4">2.2.1</span> PEAS </h4>
+<div class="outline-text-4" id="text-2_2_1">
+
+<p>Performance Measure
+Environment
+Actuators
+Sensors
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_2" class="outline-4">
+<h4 id="sec-2_2_2"><span class="section-number-4">2.2.2</span> Agent </h4>
+<div class="outline-text-4" id="text-2_2_2">
+
+<p>Perceives its environment and performs an action based on what it
+observes.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_3" class="outline-4">
+<h4 id="sec-2_2_3"><span class="section-number-4">2.2.3</span> Agent Function </h4>
+<div class="outline-text-4" id="text-2_2_3">
+
+<p>Given a percept acquired from the environment, return an action for
+the agent to perform.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_4" class="outline-4">
+<h4 id="sec-2_2_4"><span class="section-number-4">2.2.4</span> Agent Program </h4>
+<div class="outline-text-4" id="text-2_2_4">
+
+<p>An agent program is the glue between an actual agent and an agent
+function. This agent perceives the world and the program feeds these
+percepts to the agent function, which returns an action that must be
+handed to the agent to perform.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_5" class="outline-4">
+<h4 id="sec-2_2_5"><span class="section-number-4">2.2.5</span> Rationality </h4>
+<div class="outline-text-4" id="text-2_2_5">
+
+<p>When an agent system is stochastic (non-deterministic) there is an
+element of randomness that makes it impossible to easily map an
+environment state to an action. A rational agent will pick an action
+for each state that brings it closer to whatever goals it has. When it
+has multiple/conflicting goals, it should prioritize the most
+important of them.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_6" class="outline-4">
+<h4 id="sec-2_2_6"><span class="section-number-4">2.2.6</span> Autonomy </h4>
+<div class="outline-text-4" id="text-2_2_6">
+
+<p>A simple agent function has a lookup table that matches environments
+or states to a corresponding action. This table is static, and its
+size grows exponentially with the number percepts observed. An
+autonomous agent 'adapts' to its perceptions and learns. For this
+reason, it doesn't need this infinitely large condition-action table.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_7" class="outline-4">
+<h4 id="sec-2_2_7"><span class="section-number-4">2.2.7</span> Reflex Agent </h4>
+<div class="outline-text-4" id="text-2_2_7">
+
+<p>These take an incoming percept and just match it to a predefined
+action or combine it with the current state and match that state to an
+action. Former of these two types is a simple reflex agent, but both
+of them require an infinitely large lookup table.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_8" class="outline-4">
+<h4 id="sec-2_2_8"><span class="section-number-4">2.2.8</span> Model-Based Agent </h4>
+<div class="outline-text-4" id="text-2_2_8">
+
+<p>Calling an agent model-based would imply that it is keeping track of
+hchanges in its environment by building up some 'state.' While the
+structure of the state can vary, it is always built comparing previous
+actions with the new percept. In this way, the agent function can find
+cause-effect relationships between actions and changes in the world.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_9" class="outline-4">
+<h4 id="sec-2_2_9"><span class="section-number-4">2.2.9</span> Goal-Based Agent </h4>
+<div class="outline-text-4" id="text-2_2_9">
+
+<p>Some agents have a set of goals that may or may not be conflicting. A
+goal-based agent tries to maximize the progress towards to these goals
+with respect to their priority.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_10" class="outline-4">
+<h4 id="sec-2_2_10"><span class="section-number-4">2.2.10</span> Utility-Based Agent </h4>
+<div class="outline-text-4" id="text-2_2_10">
+
+<p>After each action an agent makes, its environment will most likely
+change in some way. Based on the purpose of the agent, the new state
+can be better or worse in terms of utility. When the state of the
+environment can be mapped to a real number, there is a measure of
+success of an action. If the utility is higher, we made a good move.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_2_11" class="outline-4">
+<h4 id="sec-2_2_11"><span class="section-number-4">2.2.11</span> Learning Agent </h4>
+<div class="outline-text-4" id="text-2_2_11">
+
+<p>Learning agent learns. An agent that learns will be much more
+versatile in that it can become competent in environments it knows
+nothing about to start with. These agents are composed of four
+components: the learning element, performance element, the critic, and
+the problem generator.
+</p>
+<p>
+A learning element creates changes in actions and when to perform
+them. It is told by the critic how the agent's actions are doing, as
+well as getting feedback about how actions are changing the world from
+the performance element. With this information, it can propose changes
+in how actions are chosen and which actions are available.
+</p>
+<p>
+Performance elements choose the actions based on incoming percepts and
+the current state of the world. Changes to the performance element
+originate from the learning element.
+</p>
+<p>
+Critics simply evaluates the state of the world with respect to a
+static performance standard. The critic decides how to categorize
+events, such as dictating that check mates in chess are good, and
+hitting neighboring cars in a taxi is bad. The standard must be fixed,
+and the critic should be completely static; it can be seen as its own
+agent altogether.
+</p>
+<p>
+Without the problem generator, the agent would simply perform actions
+determined by the performance element that were influenced by the
+learning element. This setup could work fine, but introducing
+creativity can lead to a better set of rules. A problem generator
+proposes possible actions that may or may not be beneficial. Without
+this, the agent may miss out on a lot of opportunities.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2_3" class="outline-3">
+<h3 id="sec-2_3"><span class="section-number-3">2.3</span> Chapter Exercises </h3>
+<div class="outline-text-3" id="text-2_3">
+
+
+</div>
+
+<div id="outline-container-2_3_1" class="outline-4">
+<h4 id="sec-2_3_1"><span class="section-number-4">2.3.1</span> Problem 2.2 </h4>
+<div class="outline-text-4" id="text-2_3_1">
+
+<p>A performance measure describes how the current state of the
+environment compares to the target environment. In a vaccuum model, a
+performance measure could be the average number of squares that are
+clean over a given interval. These are usually designed to express the
+reason the agent exists. A vaccuum agent would exist to create clean
+floors, not necessarily to suck dirt, so it wouldn't be a good measure
+to compare number of times it sucked dirt.
+</p>
+<p>
+Very similarly, there is the utility measure. Where the performance
+measure evaluates how close the environment is to being at its target
+state, a utility measure maps a state or sequence of states to a real
+number. This number describes how well the course of events have
+satisfied the agent's goals. It should consider conflicting goals and
+priority when judging the effectiveness of the agent. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2_3_2" class="outline-4">
+<h4 id="sec-2_3_2"><span class="section-number-4">2.3.2</span> Problem 2.3 </h4>
+<div class="outline-text-4" id="text-2_3_2">
+
+<p>There can be multiple agent programs that implement a given agent
+function. For example, you could run an agent program on a computer in
+order to run simulations. This would be different than implementing
+the agent function in a program that runs on an agent that physically
+performs the actions.
+</p>
+<p>
+Any agent function can be implemented by a program. There might be
+physical constraints, but hypothetically any function that maps
+percepts and possibly a state can be implemented by a program.
+</p></div>
+
+</div>
+
+<div id="outline-container-2_3_3" class="outline-4">
+<h4 id="sec-2_3_3"><span class="section-number-4">2.3.3</span> Problem 2.5 </h4>
+<div class="outline-text-4" id="text-2_3_3">
+
+<ul>
+<li id="sec-2_3_3_1">Soccer player <br/>
+Performance Measure: Goals made, steals, shots blocked, forward
+progression of ball.
+
+<p>
+Environment: Soccer field.
+</p>
+<p>
+Actuators: Legs, arms, head, body, mouth.
+</p>
+<p>
+Sensors: Audio, Visual.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-2_3_3_2">Internet book-shopping agent: <br/>
+Performance Measure: Dollars saved on average, number of books bought
+successfully, popularity of chosen books.
+
+<p>
+Environment: Internet.
+</p>
+<p>
+Actuators: HTTP requests.
+</p>
+<p>
+Sensors: HTTP responses.
+</p></li>
+</ul>
+<ul>
+<li id="sec-2_3_3_3">Autonomous Mars rover <br/>
+Performance Measure: Surface area discovered and mapped, unique
+substances found.
+
+<p>
+Environment: Mars.
+</p>
+<p>
+Actuators: Wheels, claws.
+</p>
+<p>
+Sensors: Video, camera, microscope, other detection sensors.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-2_3_3_4">Math theorem-proving assistant: <br/>
+Performance Measure: Progress through proof, proofs solved, useful
+hints offered, speed of solve.
+
+<p>
+Environment: Mathematician's office, computer.
+</p>
+<p>
+Actuators: Screen display, audio.
+</p>
+<p>
+Sensors: Keyboard input, web resources.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2_3_4" class="outline-4">
+<h4 id="sec-2_3_4"><span class="section-number-4">2.3.4</span> Problem 2.6 </h4>
+<div class="outline-text-4" id="text-2_3_4">
+
+<ul>
+<li id="sec-2_3_4_1">Soccer player <br/>
+Partially Observable
+Stochastic
+Sequential
+Dynamic
+Continuous
+Multiagent (cooperative and competitive)
+</li>
+</ul>
+<ul>
+<li id="sec-2_3_4_2">Internet book-shopping agnet <br/>
+Partially Observable
+Stochastic
+Episodic across multiple books. Sequential when looking for specific book
+Static
+Discrete
+Single Agent
+</li>
+</ul>
+<ul>
+<li id="sec-2_3_4_3">Autonomous mars rover <br/>
+Partially Observable
+Stochastic
+Sequential
+Dynamic
+Continous
+Single agent
+</li>
+</ul>
+<ul>
+<li id="sec-2_3_4_4">Math theorem-proving assistant <br/>
+Fully observable
+Deterministic
+Episodic for multiple proofs, sequential for current
+Semidynamic
+Discrete
+Single Agent
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2_4" class="outline-3">
+<h3 id="sec-2_4"><span class="section-number-3">2.4</span> Programming </h3>
+<div class="outline-text-3" id="text-2_4">
+
+<p>File is <a href="file:///Users/mattforbes/lisp/ai/exercises/2.7.lisp">here</a>.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Uninformed Search - Chapter 3 </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3_1" class="outline-3">
+<h3 id="sec-3_1"><span class="section-number-3">3.1</span> Summary </h3>
+<div class="outline-text-3" id="text-3_1">
+
+<p>This chapter was mostly an introduction to methods of solving problems
+by searching. It demonstrated how solutions to problems are much
+easier to formulate when the problem is posed in a certain format,
+namely when these components are defined: the initial state, possible
+actions defined by a successor function, a goal test, and a path cost
+which defines a numeric cost to each action. There are quite a few
+different search techniques including breadth-first, depth-first,
+bidrectional search, and variations of these. There are tradeoffs
+between techniques, for example depth-first search uses much less
+memory than breadth-first but may not be optimal. 
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2" class="outline-3">
+<h3 id="sec-3_2"><span class="section-number-3">3.2</span> Chapter Notes </h3>
+<div class="outline-text-3" id="text-3_2">
+
+
+</div>
+
+<div id="outline-container-3_2_1" class="outline-4">
+<h4 id="sec-3_2_1"><span class="section-number-4">3.2.1</span> state </h4>
+<div class="outline-text-4" id="text-3_2_1">
+
+<p>A possible configuration of the environment.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_2" class="outline-4">
+<h4 id="sec-3_2_2"><span class="section-number-4">3.2.2</span> state space </h4>
+<div class="outline-text-4" id="text-3_2_2">
+
+<p>The set of all states.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_3" class="outline-4">
+<h4 id="sec-3_2_3"><span class="section-number-4">3.2.3</span> search tree </h4>
+<div class="outline-text-4" id="text-3_2_3">
+
+<p>A tree that describes possible sequences of states. The children of a
+node are states that are accessible by performing some action. 
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_4" class="outline-4">
+<h4 id="sec-3_2_4"><span class="section-number-4">3.2.4</span> search node </h4>
+<div class="outline-text-4" id="text-3_2_4">
+
+<p>These are the nodes that are in the search tree.  Each corresponds to
+a certain state, and the action that was performed to get to it.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_5" class="outline-4">
+<h4 id="sec-3_2_5"><span class="section-number-4">3.2.5</span> goal </h4>
+<div class="outline-text-4" id="text-3_2_5">
+
+<p>When searching, the agent should generate sequences of states,
+stopping when it's found one that ends in a goal state.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_6" class="outline-4">
+<h4 id="sec-3_2_6"><span class="section-number-4">3.2.6</span> action </h4>
+<div class="outline-text-4" id="text-3_2_6">
+
+<p>An action takes an agent from one state to another. Different actions
+can map to different states.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_7" class="outline-4">
+<h4 id="sec-3_2_7"><span class="section-number-4">3.2.7</span> successor function </h4>
+<div class="outline-text-4" id="text-3_2_7">
+
+<p>Maps a state to a set of actions and resulting states that are
+available. Used to build the children of a node in a search tree.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_8" class="outline-4">
+<h4 id="sec-3_2_8"><span class="section-number-4">3.2.8</span> branching factor </h4>
+<div class="outline-text-4" id="text-3_2_8">
+
+<p>Maximum number of results the given successor function can generate.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3_3" class="outline-3">
+<h3 id="sec-3_3"><span class="section-number-3">3.3</span> Chapter Exercises </h3>
+<div class="outline-text-3" id="text-3_3">
+
+
+</div>
+
+<div id="outline-container-3_3_1" class="outline-4">
+<h4 id="sec-3_3_1"><span class="section-number-4">3.3.1</span> Problem 3.2 </h4>
+<div class="outline-text-4" id="text-3_3_1">
+
+<p>Goal formation must come before problem formation; the problem
+dictates which actions and states should be considered in order to
+accomplish something. If we don't have anything to shoot for then we
+have no problem to solve.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_3_2" class="outline-4">
+<h4 id="sec-3_3_2"><span class="section-number-4">3.3.2</span> Problem 3.3 </h4>
+<div class="outline-text-4" id="text-3_3_2">
+
+<p>legal-actions(s): denotes set of actions legal for state s
+result(a,s): denotes state that results from performing a on s
+</p>
+<p>
+vice;
+successor(s): map( f(a): &lt;a, result(a,s)&gt; , legal-actions(s) )
+</p>
+<p>
+versa;
+legal-actions(s): map( f(x): first(x) , successor(s) )
+result(a,s): first( lookup(a, successor(s)) )
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Informed (Heuristics) Search - Chapter 4 </h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4_1" class="outline-3">
+<h3 id="sec-4_1"><span class="section-number-3">4.1</span> Summary </h3>
+<div class="outline-text-3" id="text-4_1">
+
+<p>This chapter highlights the problems with uninformed
+search. Especially the case where the search space is so large, it
+would be infeasible to search it for a solution. That's where
+heuristics come in, they help guide the search process towards the
+solution based on some auxillary function. For example, when searching
+for the shortest route between two cities on a map, it is would be
+better to check the edges that lead to cities closest to the
+destination first. So, the heuristic in this example is the
+straight-line distance. Using a heuristic leads to new types of
+searches, most importantly though, is A*, which checks the nodes
+estimated to be closest to the solution first. It makes estimates by
+adding the path cost with the value of the heuristic
+function. Finally, other informed search methods are introduced such
+as hill climbing, beam search, and genetic algorithms.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Knowledge Representation - Chapter 10 </h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5_1" class="outline-3">
+<h3 id="sec-5_1"><span class="section-number-3">5.1</span> Summary </h3>
+<div class="outline-text-3" id="text-5_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-5_2" class="outline-3">
+<h3 id="sec-5_2"><span class="section-number-3">5.2</span> Chapter Notes </h3>
+<div class="outline-text-3" id="text-5_2">
+
+
+</div>
+
+<div id="outline-container-5_2_1" class="outline-4">
+<h4 id="sec-5_2_1"><span class="section-number-4">5.2.1</span> Ontological Engineering </h4>
+<div class="outline-text-4" id="text-5_2_1">
+
+<p>Representing general concepts such as actions, time, physical objects,
+and beliefs.
+</p><ul>
+<li id="sec-5_2_1_1">Upper Ontology <br/>
+The general framework of concepts, rather than specific details.
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_2" class="outline-4">
+<h4 id="sec-5_2_2"><span class="section-number-4">5.2.2</span> Categories </h4>
+<div class="outline-text-4" id="text-5_2_2">
+
+<p>Grouping of objects or other categories that define a set of truths or
+attributes about its contained objects.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_3" class="outline-4">
+<h4 id="sec-5_2_3"><span class="section-number-4">5.2.3</span> Disjoint Categories </h4>
+<div class="outline-text-4" id="text-5_2_3">
+
+<p>Two groups are disjoin if they have no members in common
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_4" class="outline-4">
+<h4 id="sec-5_2_4"><span class="section-number-4">5.2.4</span> Exhaustive Decomposition </h4>
+<div class="outline-text-4" id="text-5_2_4">
+
+<p>Say some category has n subcategories, then if there is an exhaustive
+decomposition on these subcategories, then a member of the category
+must also be one of the subcategories.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_5" class="outline-4">
+<h4 id="sec-5_2_5"><span class="section-number-4">5.2.5</span> Partition </h4>
+<div class="outline-text-4" id="text-5_2_5">
+
+<p>A partition is a disjoint exhaustive decomposition. Example: there is
+a partition on the category animals over {male, female}. Every animal
+must be either male or female, but never both.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_6" class="outline-4">
+<h4 id="sec-5_2_6"><span class="section-number-4">5.2.6</span> Bunch </h4>
+<div class="outline-text-4" id="text-5_2_6">
+
+<p>A way of representing a composite physical object of abstract
+elements. We can't assign a weight to the category apples, because
+"apples" is an abstract concept, but "bunch(apples)" is a composite
+object that could possible have a weight.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_7" class="outline-4">
+<h4 id="sec-5_2_7"><span class="section-number-4">5.2.7</span> Measurement Objects </h4>
+<div class="outline-text-4" id="text-5_2_7">
+
+<p>Values assigned to properties by combining a units function with a
+number, ie: Diameter(basketball) = Inches(9.5). Where "Inches" is a
+units function taking a number.
+</p>
+<p>
+Not all measures can be assigned a numeric value, such as beauty or
+deliciousness, but they can be ranked nonetheless. It is important
+that we can denote one measurement as "&lt;" than another, even if their
+values are not numerical.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_8" class="outline-4">
+<h4 id="sec-5_2_8"><span class="section-number-4">5.2.8</span> Intrinsic Properties </h4>
+<div class="outline-text-4" id="text-5_2_8">
+
+<p>Properties that belong to every instance of a certain object. When you
+cut a substance in half, the two resulting pieces retain their
+intrinsic values.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_9" class="outline-4">
+<h4 id="sec-5_2_9"><span class="section-number-4">5.2.9</span> Extrinsic Properties </h4>
+<div class="outline-text-4" id="text-5_2_9">
+
+<p>The opposite of intrinsic, these are properties like length or
+weight. If you cut a basketball in half, they will not share the same
+weight.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_10" class="outline-4">
+<h4 id="sec-5_2_10"><span class="section-number-4">5.2.10</span> Mass Nouns (Substance) </h4>
+<div class="outline-text-4" id="text-5_2_10">
+
+<p>Classes of objects that <i>only</i> include intrinsic properties.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_11" class="outline-4">
+<h4 id="sec-5_2_11"><span class="section-number-4">5.2.11</span> Count Nouns (Thing) </h4>
+<div class="outline-text-4" id="text-5_2_11">
+
+<p>Any class of objects that include at least one extrinsic property.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_12" class="outline-4">
+<h4 id="sec-5_2_12"><span class="section-number-4">5.2.12</span> Situation Calculus </h4>
+<div class="outline-text-4" id="text-5_2_12">
+
+<p>Concentration on situations, which denote the states resulting from
+executing actions, rather than explicit times.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_13" class="outline-4">
+<h4 id="sec-5_2_13"><span class="section-number-4">5.2.13</span> Situations </h4>
+<div class="outline-text-4" id="text-5_2_13">
+
+<p>Logical terms consisting of an initial situation S and all the
+possible situations occurring after applying an action to S. So
+Result(a, s) (sometimes called D) names the situation that results
+when action a is executed in situation s.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_14" class="outline-4">
+<h4 id="sec-5_2_14"><span class="section-number-4">5.2.14</span> Fluents </h4>
+<div class="outline-text-4" id="text-5_2_14">
+
+<p>Functions and predicates that vary between situations, such as
+location of the agent or inventory of the player. For example, the
+fluent ~Holding(G, S) says that the agent is not holding the gold at
+situation S.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_15" class="outline-4">
+<h4 id="sec-5_2_15"><span class="section-number-4">5.2.15</span> Atemporal Predicates and Functions </h4>
+<div class="outline-text-4" id="text-5_2_15">
+
+<p>These are "eternal"predicates and functions such as the function
+LeftLegOf(Wumpus), or the predicate IsGold(g), which never change.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_16" class="outline-4">
+<h4 id="sec-5_2_16"><span class="section-number-4">5.2.16</span> Projection </h4>
+<div class="outline-text-4" id="text-5_2_16">
+
+<p>If an agent can deduce the outcome of a sequence of individual actions
+on an initial state.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_17" class="outline-4">
+<h4 id="sec-5_2_17"><span class="section-number-4">5.2.17</span> Planning </h4>
+<div class="outline-text-4" id="text-5_2_17">
+
+<p>When an agent finds a suitable sequence of actions to achieve a
+desired effect.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_18" class="outline-4">
+<h4 id="sec-5_2_18"><span class="section-number-4">5.2.18</span> Possibility Axiom </h4>
+<div class="outline-text-4" id="text-5_2_18">
+
+<p>Asking if an action is possible to be performed in a given situation.
+</p></div>
+
+</div>
+
+<div id="outline-container-5_2_19" class="outline-4">
+<h4 id="sec-5_2_19"><span class="section-number-4">5.2.19</span> Effect Axiom </h4>
+<div class="outline-text-4" id="text-5_2_19">
+
+<p>If an action is performed in a given situation, what are the changes.
+</p>
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5_3" class="outline-3">
+<h3 id="sec-5_3"><span class="section-number-3">5.3</span> Chapter Exercises </h3>
+<div class="outline-text-3" id="text-5_3">
+
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Matt Forbes
+</p>
+<p class="date"> Date: 2011-01-15 Sat</p>
+<p class="creator">HTML generated by org-mode 7.4 in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

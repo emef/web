@@ -1,0 +1,107 @@
+{% load site_tags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{% block title %} {% endblock %} - Matt Forbes</title>
+    <link style='text/css' rel='stylesheet' href='/static/css/base.css' />
+    <link style='text/css' rel='stylesheet' href='/static/syntax/styles/shCore.css' />
+    <link style='text/css' rel='stylesheet' href='/static/syntax/styles/shThemeDefault.css' />
+    <script type='text/javascript' src='/static/syntax/scripts/shCore.js'></script>
+    <script type='text/javascript' src='/static/syntax/scripts/shBrushLisp.js'></script>
+    <script type='text/javascript' src='/static/syntax/scripts/shBrushPython.js'></script>
+    <script type="text/javascript" src="/static/js/typeface-0.15.js"></script>
+    <script type="text/javascript" src="/static/js/fonts/helvetiker_regular.typeface.js"></script>
+    <script type="text/javascript" src="/static/js/fonts/helvetiker_bold.typeface.js"></script>
+    <script type="text/javascript" src="/static/js/fonts/helvetiker_italic.typeface.js"></script>
+    <meta name="description" content="Matt Forbes - selected work, code snippets, and personal info" />
+    <meta name="keywords" content="matt, forbes, matt forbes, lisp, ai, artificial intelligence" />
+    {% block style %} {% endblock %}
+  </head>
+  <body>
+    
+    <div id="header" class="typeface-js" style="font-family: Helvetiker; font-weight: bold">
+      <div id="logo">
+        <a href='/'>(ma.tt-forbes)</a>
+      </div>
+    </div>
+    
+    <ol id='page'>
+
+      <li class='side'>
+	<div class='bar typeface-js' style='font-family: Helvetiker'>
+          
+          Tags:
+	  <div>
+	    <ul>
+	      {% for tag in tags %}
+	      <li><a href='/tag/{{ tag }}'>{{ tag }}</a></li>
+	      {% endfor %}
+	    </ul>
+	  </div>
+          
+          About:
+          <div>
+            <p>
+              I code for fun and enjoy math and artificial
+              intelligence. This is where I post some work and
+              snippets of code I find interesting.
+            </p>
+            <p>
+              My resume is available <a href="/static/resume.pdf">here</a> and you can
+              email me at m@ttforbes.com.
+            </p>
+            <div>
+              <h1>-- Matt Forbes</h1>
+            </div>
+          </div>
+          
+	</div>
+        
+      </li>
+
+      <li class='content'>
+	<div>
+
+	{% block content %}
+
+	{% endblock content %}
+	
+	</div>
+      
+      </li>
+
+      <li class='side'>
+        <!-- no search yet
+	<div id='search'>
+	  <input id='search-bar' type='text' value='search' />
+	  <div id='search-glass'>
+	    <img src='/static/image/glass.png' />
+	  </div>
+	</div>
+        -->
+      </li>
+
+    </ol>
+    <div id="footer" class="typeface-js" style="font-family: Helvetiker">
+      <a href="http://www.djangoproject.com/">
+        <img src="http://media.djangoproject.com/img/badges/djangomade124x25.gif" border="0" alt="Powered by Django." title="Powered by Django." />
+      </a>
+      <h1>
+        Fonts loaded with <a href="http://typeface.neocracy.org/">typeface</a>.
+      </h1>
+      <h1>
+        Site written and designed by Matt Forbes.
+      </h1>
+    </div>
+
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="/static/js/track.js"></script>
+    {% block scripts %} {% endblock %}
+
+  </body>
+
+</html>
+  

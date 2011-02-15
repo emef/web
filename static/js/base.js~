@@ -1,0 +1,30 @@
+window.onload = init;
+
+function init() {
+    setuplisteners();
+}
+
+function setuplisteners() {
+    var obj = document.getElementById("search-glass"),
+	inittext;
+    obj.onclick = search;
+
+    obj = document.getElementById("search-bar");
+    inittext = obj.value;
+    obj.onfocus = (function(obj) {
+	    return function() {
+		if(obj.value == inittext) {
+		    obj.value = "";
+		}
+	    }
+	})(obj);
+
+    obj.onblur = (function(obj) {
+	    return function() {
+		if(obj.value == "") {
+		    obj.value = inittext;
+		}
+	    }
+	})(obj);
+    
+}

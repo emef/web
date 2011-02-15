@@ -1,0 +1,14 @@
+{% autoescape off %}
+<div class='post'>
+  <div><a href='/{{post.title}}'>{{post.title}}</a></div>
+  <div>
+    {{post.timestamp|date:"Y.m.d"}}
+  </div>
+  {% if user.is_authenticated %}
+  <div>
+    <a href='/write/{{post.title}}'>edit</a>
+  </div>
+{% endif %}
+  {{post.content}}
+</div>
+{% endautoescape %}

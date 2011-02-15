@@ -1,0 +1,9 @@
+(function() {
+    function map_by_class(root, class_name, fn) {
+        var pat = new RegExp(class_name);
+        if (root.className.test(pat)) fn(root);
+        for (var i=0, j=root.childNodes.length; i<j; i++) {
+            map_by_class(root.childNodes[i]);
+        }
+    }
+})();

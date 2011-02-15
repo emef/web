@@ -1,0 +1,23 @@
+from django.http import HttpResponse
+from web.stats.models import Hit
+from web.lib import render, superuser_required, get_unique_hits
+
+def track(request):
+    if all(k in request.GET for k in ("referrer", "path")):
+        referrer = request.GET["referrer"]
+        path = request.GET["path"].lower()
+        ip = request.META["REMOTE_ADDR"]
+
+        if path[-1:] == '/':
+            path = path[0:-1]
+            
+        Hit.objects.create(ip=ip, referrer=referrer, path=path)
+
+    return HttpResponse("yeah")
+
+@superuser_required
+def stats(request):
+   pcount = get_unique_hits() 
+   return render("stats/stats.html",
+                 { "pcount": pcount },
+                 request)

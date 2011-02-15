@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Tracking Stats
+{% endblock title %}
+
+{% block scripts %}
+{% if user.is_superuser %}
+<script type="text/javascript" src="/static/js/stats.js"></script>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="title">
+  Traffic Statistics
+</div>
+
+<div id="stats">
+  {% for page,count in pcount %}
+  <div class='stat'>
+    <div>{{page}}</div>
+    <div>{{count}} hits</div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load site_tags %}
+
+{% block title %}
+ma.ttforbes.com
+{% endblock title %}
+
+{% block content %}
+
+{% for post in posts %}
+  {% render_partial "post.html" post:post user:user %}
+{% endfor %}
+
+{% endblock content %}

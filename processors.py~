@@ -1,0 +1,4 @@
+from web.blog.models import Tag
+
+def everypage(request):
+    

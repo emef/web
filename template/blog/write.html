@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %} write {% endblock %}
+
+{% block content %}
+
+<h3>New Post</h3>
+
+<form action="" method="post">
+  {% csrf_token %}
+
+  <div style='color: red'>
+    {{form.non_field_errors}}
+  </div>
+  
+  <div>
+    {{form.title.label_tag}}
+    {{form.title}}
+  </div>
+
+  <div>
+    {{form.tags.label_tag}}
+  </div>
+
+  <div>
+    {{form.tags}}
+  </div>
+
+  <div>
+    {{form.public.label_tag}}
+    {{form.public}}
+  </div>
+
+  <div id="post_content">
+    {{form.content}}
+  </div>
+
+  <div>
+    <input type='submit' value='post' />
+  </div>
+  
+</form>
+
+{% endblock content %}
+
+{% block style %}
+<link type='text/css' rel='stylesheet' href='/static/css/write.css' />
+{% endblock %}
