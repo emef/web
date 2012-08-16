@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from web.lib import render, get_recent_posts
+import simplejson, urllib
 
 def index(request):
     posts = get_recent_posts(10)
