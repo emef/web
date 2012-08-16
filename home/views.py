@@ -10,7 +10,7 @@ def index(request):
 def ovrundr(request, username):
     url_fmt = 'http://runkeeper.com/user/%s/ajax/liveActivityCheck'
     live = urllib.urlopen(url_fmt % username).read()
-    return HttpResponse(live, mimetype='text/json')
+    return HttpResponse(live, mimetype='application/json')
 
 def loc(request, id):
     pass
