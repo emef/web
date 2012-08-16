@@ -13,4 +13,11 @@ def ovrundr(request, username):
     return HttpResponse(live, mimetype='application/json')
 
 def loc(request, id):
-    pass
+    url_fmt = 'http://runkeeper.com/ajax/pointData?activityId=%s'
+    data = simplejson.loads(urllib.urlopen(url_fmt % id).read())
+    points = data['points']
+    max_pt = points[0]
+    for point in points:
+        if point['deltaTime'] > max_pt['deltaTime']:
+            max_pt = point
+    return HttpResponse(simplejson.dumps(max_pt), mimetype='application/json')
