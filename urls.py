@@ -14,7 +14,7 @@ urlpatterns = patterns(
      'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     (r'^logout', 'django.contrib.auth.views.logout'),
     (r'^admin/', include(admin.site.urls)),
-    (r'^ovrundr/(?P<id>[^/]+)/?$', 'web.home.views.loc'),
-    (r'^ovrundr/(?P<username>[^/]+)/?$', 'web.home.views.ovrundr'),
+    (r'^ovrundr/loc/(?P<id>[^/]+)/?$', 'web.home.views.loc'),
+    (r'^ovrundr/live/(?P<username>[^/]+)/?$', 'web.home.views.ovrundr'),
     (r'^(?P<title>[^/]+)', 'web.blog.views.by_title'),
 )
