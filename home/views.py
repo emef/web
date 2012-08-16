@@ -7,7 +7,10 @@ def index(request):
     posts = get_recent_posts(10)
     return render("blog/multi.html", {'posts': posts}, request)
 
-def ovrundr(request, username):
+def ovrundr(request):
+    return render('home/ovrundr.html', {}, request)
+
+def live(request, username):
     url_fmt = 'http://runkeeper.com/user/%s/ajax/liveActivityCheck'
     live = urllib.urlopen(url_fmt % username).read()
     return HttpResponse(live, mimetype='application/json')
