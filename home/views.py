@@ -9,7 +9,7 @@ def index(request):
 
 def ovrundr(request, username):
     url_fmt = 'http://runkeeper.com/user/%s/ajax/liveActivityCheck'
-    live = simplejson.loads(urllib.urlopen(url_fmt % username).read())
+    live = urllib.urlopen(url_fmt % username).read()
     return HttpResponse(live, mimetype='text/json')
 
 def loc(request, id):
