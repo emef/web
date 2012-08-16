@@ -1,5 +1,16 @@
 var id="110325092";
 
+function ajax(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 3) {
+            callback(JSON.parse(xhr.responseText));
+        }
+    }
+    xhr.send();
+}
+
 function update(lat, lng) {
     var point = new google.maps.LatLng(lat, lng);
     var map_container = document.getElementById('map');
@@ -22,13 +33,9 @@ function update(lat, lng) {
 }
 
 function get_id() {
-    $.ajax({
-        type: 'GET',
-        url: 'http://ma.ttforbes.com/ovrundr/live/NickAlexander',
-        async: false,
-        success: function(live) {
-            console.log(live);
-        }
+    var url = 'http://ma.ttforbes.com/ovrundr/live/NickAlexander';
+    ajax(url, function(live) {
+        console.log(live);
     });
 }
 
