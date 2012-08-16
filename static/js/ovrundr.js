@@ -11,7 +11,7 @@ function ajax(url, callback) {
     xhr.send();
 }
 
-function update(lat, lng) {
+function update_map(lat, lng) {
     var point = new google.maps.LatLng(lat, lng);
     var map_container = document.getElementById('map');
     var options = {
@@ -32,10 +32,20 @@ function update(lat, lng) {
     });
 }
 
-function get_id() {
-    var url = 'http://ma.ttforbes.com/ovrundr/live/NickAlexander';
+function update_position(id) {
+    var url = '/ovrundr/loc/' + id;
+    ajax(url, function(pt) {
+        update_map(pt.latitude, pt.longitude);
+    });
+}
+
+function check_id(username) {
+    var url = '/ovrundr/live/' + username;
     ajax(url, function(live) {
-        console.log(live);
+        var id = live.liveActivityId;
+        if (id.length) {
+            update_position(id);
+        }
     });
 }
 
