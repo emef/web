@@ -47,5 +47,5 @@ function check_and_update(username) {
 
 (function() {
     check_and_update(user);
-    setTimeout(arguments.callee, 1000);
+    setTimeout(arguments.callee, 1000 * 3);
 })();
