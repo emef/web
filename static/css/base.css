@@ -2,7 +2,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: “Georgia”, serif;
+    font-family: font-family: Tahoma, Geneva, sans-serif;
     background: #cecece;
 }
 
@@ -24,8 +24,7 @@ div.side {
 
 div.content {
     width: 60%;
-    background: #white;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background: white;
 }
 
 div.content > div {
@@ -37,6 +36,7 @@ div.content > div {
     margin: 0 0;
     font-size: 1.3em;
     color: #ff8000;
+    font-family: Verdana;
 }
 
 .bar {
@@ -109,6 +109,21 @@ div.content > div {
     color: #034569;
 }
 
+.post > h2 {
+    padding: 15px 0px 0px 50px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #26517C;
+}
+
+.post > ol {
+    padding: 20px 0px 0px 80px;
+}
+
+.post > ol > li {
+    list-style-type: decimal;
+}
+
 .post > div:first-child a {
     color: #034569;
     font-size: 1.6em;
@@ -120,9 +135,10 @@ div.content > div {
 }
 
 .post > p {
-    padding: 25px 50px 0px 50px;
+    padding: 15px 50px 0px 50px;
     line-height: 1.6em;
     color: #333;
+    font-size: 16px;
 }
 
 .title {

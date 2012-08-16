@@ -1,5 +1,5 @@
 {% autoescape off %}
-<div class="post typeface-js" style="font-family: Helvetiker">
+<div class="post">
   <div><a href='/{{post.title}}'>{{post.title}}</a></div>
   <div>
     {{post.timestamp|date:"Y.m.d"}}
@@ -10,5 +10,11 @@
   </div>
 {% endif %}
   {{post.content}}
+
+  {% if preview %}
+  <p>
+    <a style="float: right" href="http://ma.ttforbes.com/{{post.title}}#disqus_thread">{{post.title}}</a>
+  </p>
+  {% endif %}
 </div>
 {% endautoescape %}

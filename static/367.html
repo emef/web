@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>notes</title>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-01-28 11:13:00 PST"/>
+<meta name="generated" content="2011-02-17 14:57:58 PST"/>
 <meta name="author" content="Matt Forbes"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -122,7 +122,7 @@ lang="en" xml:lang="en">
 </ul></li>
 </ul>
 </li>
-<li><a href="#sec-3">3 Link Layer </a>
+<li><a href="#sec-3">3 Data Link Layer </a>
 <ul>
 <li><a href="#sec-3_1">3.1 Transmission Errors </a></li>
 <li><a href="#sec-3_2">3.2 Frames </a>
@@ -148,22 +148,132 @@ lang="en" xml:lang="en">
 <ul>
 <li><a href="#sec-3_5_1">3.5.1 Simple Protocol (stop and wait) </a></li>
 <li><a href="#sec-3_5_2">3.5.2 Sliding Window </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_6">3.6 Types of Links </a>
+<ul>
+<li><a href="#sec-3_6_1">3.6.1 Point-to-point </a></li>
+<li><a href="#sec-3_6_2">3.6.2 Broadcast </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_7">3.7 CSMA/CD - Collisison Detection (Know this) </a></li>
+<li><a href="#sec-3_8">3.8 CSMA/CA - Collision Avoidance </a>
+<ul>
+<li><a href="#sec-3_8_1">3.8.1 RTS / CTS - request/clear to send </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_9">3.9 Ethernet </a>
+<ul>
+<li><a href="#sec-3_9_1">3.9.1 Frame (in bytes) </a></li>
+<li><a href="#sec-3_9_2">3.9.2 Minimum Packet (DATA) Size </a></li>
+<li><a href="#sec-3_9_3">3.9.3 Max Packet Size </a></li>
+<li><a href="#sec-3_9_4">3.9.4 Switched Ethernet </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_10">3.10 Wireless "ethernet" WLAN </a>
+<ul>
+<li><a href="#sec-3_10_1">3.10.1 Access Point (AP) mode vs Ad Hoc (point to point) </a></li>
+<li><a href="#sec-3_10_2">3.10.2 MAC sublayer protocol (CSMA/CA) </a></li>
+<li><a href="#sec-3_10_3">3.10.3 Frame (in bytes) </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_11">3.11 Broadband Wireless (WiMAX) </a></li>
+<li><a href="#sec-3_12">3.12 Bluetooth </a>
+<ul>
+<li><a href="#sec-3_12_1">3.12.1 Transmission </a></li>
+<li><a href="#sec-3_12_2">3.12.2 Addresses </a></li>
+<li><a href="#sec-3_12_3">3.12.3 Active/Parked slaves </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_13">3.13 RFID </a></li>
+<li><a href="#sec-3_14">3.14 LAN Extension </a>
+<ul>
+<li><a href="#sec-3_14_1">3.14.1 Why? </a></li>
+<li><a href="#sec-3_14_2">3.14.2 Repeater </a></li>
+<li><a href="#sec-3_14_3">3.14.3 Bridge </a></li>
+<li><a href="#sec-3_14_4">3.14.4 Switch </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_15">3.15 VLAN (Virtual LAN) </a>
+<ul>
+<li><a href="#sec-3_15_1">3.15.1 Switch-Based </a></li>
 </ul></li>
 </ul>
 </li>
-<li><a href="#sec-4">4 adf </a>
+<li><a href="#sec-4">4 Network Layer </a>
 <ul>
-<li><a href="#sec-4_1">4.1 Types of Links </a>
+<li><a href="#sec-4_1">4.1 Purpose: </a></li>
+<li><a href="#sec-4_2">4.2 Store and Forward </a></li>
+<li><a href="#sec-4_3">4.3 Goals </a></li>
+<li><a href="#sec-4_4">4.4 Connectionless Service </a>
 <ul>
-<li><a href="#sec-4_1_1">4.1.1 Point-to-point </a></li>
-<li><a href="#sec-4_1_2">4.1.2 Broadcast </a></li>
+<li><a href="#sec-4_4_1">4.4.1 Packet Switching </a></li>
+<li><a href="#sec-4_4_2">4.4.2 Failure </a></li>
 </ul>
 </li>
-<li><a href="#sec-4_2">4.2 CSMA/CD - Collisison Detection (Know this) </a></li>
-<li><a href="#sec-4_3">4.3 CSMA/CA - Collision Avoidance </a>
+<li><a href="#sec-4_5">4.5 Connection-Oriented Service </a>
 <ul>
-<li><a href="#sec-4_3_1">4.3.1 RTS / CTS - request/clear to send </a></li>
-</ul></li>
+<li><a href="#sec-4_5_1">4.5.1 Virtual Circuit </a></li>
+<li><a href="#sec-4_5_2">4.5.2 Failuire </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_6">4.6 Routing </a>
+<ul>
+<li><a href="#sec-4_6_1">4.6.1 Types of switches </a></li>
+<li><a href="#sec-4_6_2">4.6.2 Default Route </a></li>
+<li><a href="#sec-4_6_3">4.6.3 Routing Tables </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_7">4.7 Congestion Control </a></li>
+<li><a href="#sec-4_8">4.8 QoS </a>
+<ul>
+<li><a href="#sec-4_8_1">4.8.1 Jitter </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_9">4.9 Internetworking </a>
+<ul>
+<li><a href="#sec-4_9_1">4.9.1 IP Addresses </a></li>
+<li><a href="#sec-4_9_2">4.9.2 Class Addressing </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_10">4.10 Routers </a>
+<ul>
+<li><a href="#sec-4_10_1">4.10.1 Mapping hardware address to protocol address </a></li>
+<li><a href="#sec-4_10_2">4.10.2 ARP </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_11">4.11 IP Datagrams </a>
+<ul>
+<li><a href="#sec-4_11_1">4.11.1 Virtual Packets </a></li>
+<li><a href="#sec-4_11_2">4.11.2 Fragmentation </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_12">4.12 IPV6 </a>
+<ul>
+<li><a href="#sec-4_12_1">4.12.1 Extensible Headers </a></li>
+<li><a href="#sec-4_12_2">4.12.2 IPV6 Datagram </a></li>
+<li><a href="#sec-4_12_3">4.12.3 Fragmentation </a></li>
+<li><a href="#sec-4_12_4">4.12.4 Addressing </a></li>
+<li><a href="#sec-4_12_5">4.12.5 6to4 net </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_13">4.13 UDP and TCP </a>
+<ul>
+<li><a href="#sec-4_13_1">4.13.1 Multiplexing </a></li>
+<li><a href="#sec-4_13_2">4.13.2 Packets </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_14">4.14 NAT (network address translation) </a></li>
+<li><a href="#sec-4_15">4.15 ICMP (Internet Control Message Protocol) </a>
+<ul>
+<li><a href="#sec-4_15_1">4.15.1 Ping - echo/echo reply </a></li>
+<li><a href="#sec-4_15_2">4.15.2 Source Quench - tell source to shut up </a></li>
+<li><a href="#sec-4_15_3">4.15.3 Time Exceeded - when TTL hits zero </a></li>
+<li><a href="#sec-4_15_4">4.15.4 Dest. Unreachable - all links to router down </a></li>
+<li><a href="#sec-4_15_5">4.15.5 Redirect - Hints to a host that a different route would be faster </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_16">4.16 DHCP </a></li>
 </ul>
 </li>
 <li><a href="#sec-5">5 Network Programming </a>
@@ -192,6 +302,7 @@ lang="en" xml:lang="en">
 <li><a href="#sec-5_4_12">5.4.12 ntoa </a></li>
 </ul>
 </li>
+<li><a href="#sec-5_5">5.5 Ncat </a></li>
 </ul>
 </li>
 </ul>
@@ -825,7 +936,7 @@ and one for 1.
 </div>
 
 <div id="outline-container-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Link Layer </h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> Data Link Layer </h2>
 <div class="outline-text-2" id="text-3">
 
 
@@ -1012,36 +1123,28 @@ packets up to packet n.
 </ul>
 </div>
 </div>
-</div>
 
 </div>
 
-<div id="outline-container-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> adf </h2>
-<div class="outline-text-2" id="text-4">
-
-
-</div>
-
-<div id="outline-container-4_1" class="outline-3">
-<h3 id="sec-4_1"><span class="section-number-3">4.1</span> Types of Links </h3>
-<div class="outline-text-3" id="text-4_1">
+<div id="outline-container-3_6" class="outline-3">
+<h3 id="sec-3_6"><span class="section-number-3">3.6</span> Types of Links </h3>
+<div class="outline-text-3" id="text-3_6">
 
 
 </div>
 
-<div id="outline-container-4_1_1" class="outline-4">
-<h4 id="sec-4_1_1"><span class="section-number-4">4.1.1</span> Point-to-point </h4>
-<div class="outline-text-4" id="text-4_1_1">
+<div id="outline-container-3_6_1" class="outline-4">
+<h4 id="sec-3_6_1"><span class="section-number-4">3.6.1</span> Point-to-point </h4>
+<div class="outline-text-4" id="text-3_6_1">
 
 <p>Typically long distance, single connection from machine to machine.
 </p></div>
 
 </div>
 
-<div id="outline-container-4_1_2" class="outline-4">
-<h4 id="sec-4_1_2"><span class="section-number-4">4.1.2</span> Broadcast </h4>
-<div class="outline-text-4" id="text-4_1_2">
+<div id="outline-container-3_6_2" class="outline-4">
+<h4 id="sec-3_6_2"><span class="section-number-4">3.6.2</span> Broadcast </h4>
+<div class="outline-text-4" id="text-3_6_2">
 
 <p>Typically local area. 
 </p>
@@ -1050,9 +1153,9 @@ packets up to packet n.
 
 </div>
 
-<div id="outline-container-4_2" class="outline-3">
-<h3 id="sec-4_2"><span class="section-number-3">4.2</span> CSMA/CD - Collisison Detection (Know this) </h3>
-<div class="outline-text-3" id="text-4_2">
+<div id="outline-container-3_7" class="outline-3">
+<h3 id="sec-3_7"><span class="section-number-3">3.7</span> CSMA/CD - Collisison Detection (Know this) </h3>
+<div class="outline-text-3" id="text-3_7">
 
 <p>Standard Ethernet Protocol. Carrier Sense Multiple Access. Exponential
 backoff time when collisions are detected.
@@ -1060,19 +1163,703 @@ backoff time when collisions are detected.
 
 </div>
 
+<div id="outline-container-3_8" class="outline-3">
+<h3 id="sec-3_8"><span class="section-number-3">3.8</span> CSMA/CA - Collision Avoidance </h3>
+<div class="outline-text-3" id="text-3_8">
+
+
+</div>
+
+<div id="outline-container-3_8_1" class="outline-4">
+<h4 id="sec-3_8_1"><span class="section-number-4">3.8.1</span> RTS / CTS - request/clear to send </h4>
+<div class="outline-text-4" id="text-3_8_1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_9" class="outline-3">
+<h3 id="sec-3_9"><span class="section-number-3">3.9</span> Ethernet </h3>
+<div class="outline-text-3" id="text-3_9">
+
+
+</div>
+
+<div id="outline-container-3_9_1" class="outline-4">
+<h4 id="sec-3_9_1"><span class="section-number-4">3.9.1</span> Frame (in bytes) </h4>
+<div class="outline-text-4" id="text-3_9_1">
+
+<p>preamble - 8
+dest address - 6
+source address - 6
+type - 2
+data - 0 to 1500 
+pad - 0 to 46
+checksum - 4
+</p></div>
+
+</div>
+
+<div id="outline-container-3_9_2" class="outline-4">
+<h4 id="sec-3_9_2"><span class="section-number-4">3.9.2</span> Minimum Packet (DATA) Size </h4>
+<div class="outline-text-4" id="text-3_9_2">
+
+<p>46 bytes to ensure entire network is saturated so even computers at
+maximum distance away (300-500m) can detect errors.
+</p>
+<p>
+data+pad &gt;= 46
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3_9_3" class="outline-4">
+<h4 id="sec-3_9_3"><span class="section-number-4">3.9.3</span> Max Packet Size </h4>
+<div class="outline-text-4" id="text-3_9_3">
+
+<p>1500
+</p></div>
+
+</div>
+
+<div id="outline-container-3_9_4" class="outline-4">
+<h4 id="sec-3_9_4"><span class="section-number-4">3.9.4</span> Switched Ethernet </h4>
+<div class="outline-text-4" id="text-3_9_4">
+
+<ul>
+<li id="sec-3_9_4_1">Early version (hub) <br/>
+Indistinquishable from a single wire. Just as many collisions as
+without.
+</li>
+</ul>
+<ul>
+<li id="sec-3_9_4_2">Migration to switch <br/>
+Smarter than a hub, computers can just talk to the switch, and it can
+route that to the correct computer. When connections to the hub are
+duplex (two-way) there are no longer collisions because all computers
+are just talking to the switch.
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_10" class="outline-3">
+<h3 id="sec-3_10"><span class="section-number-3">3.10</span> Wireless "ethernet" WLAN </h3>
+<div class="outline-text-3" id="text-3_10">
+
+
+</div>
+
+<div id="outline-container-3_10_1" class="outline-4">
+<h4 id="sec-3_10_1"><span class="section-number-4">3.10.1</span> Access Point (AP) mode vs Ad Hoc (point to point) </h4>
+<div class="outline-text-4" id="text-3_10_1">
+
+<p>AP mode is more flexible and ad hoc is not
+</p></div>
+
+</div>
+
+<div id="outline-container-3_10_2" class="outline-4">
+<h4 id="sec-3_10_2"><span class="section-number-4">3.10.2</span> MAC sublayer protocol (CSMA/CA) </h4>
+<div class="outline-text-4" id="text-3_10_2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3_10_3" class="outline-4">
+<h4 id="sec-3_10_3"><span class="section-number-4">3.10.3</span> Frame (in bytes) </h4>
+<div class="outline-text-4" id="text-3_10_3">
+
+<p>frame control 2
+duration 2
+dest 6
+source 6
+address3 6 (usually AP address)
+sequence 2
+data 0-2k
+check sequence 2
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3_11" class="outline-3">
+<h3 id="sec-3_11"><span class="section-number-3">3.11</span> Broadband Wireless (WiMAX) </h3>
+<div class="outline-text-3" id="text-3_11">
+
+<p>Up to 10x further access than 802.11 wifi.
+</p></div>
+
+</div>
+
+<div id="outline-container-3_12" class="outline-3">
+<h3 id="sec-3_12"><span class="section-number-3">3.12</span> Bluetooth </h3>
+<div class="outline-text-3" id="text-3_12">
+
+
+</div>
+
+<div id="outline-container-3_12_1" class="outline-4">
+<h4 id="sec-3_12_1"><span class="section-number-4">3.12.1</span> Transmission </h4>
+<div class="outline-text-4" id="text-3_12_1">
+
+<p>Time-division duplex on ISM radio bandwidth (2.4Ghz).
+79 separate channels (carrier frequencies) 1Mhz apart.
+Transmission stays on the same frequency until it has completed (but can only 1, 3, or 5
+time slots)
+</p></div>
+
+</div>
+
+<div id="outline-container-3_12_2" class="outline-4">
+<h4 id="sec-3_12_2"><span class="section-number-4">3.12.2</span> Addresses </h4>
+<div class="outline-text-4" id="text-3_12_2">
+
+<p>48 bits, the master's address is used to pick a psuedo-random hopping
+standard
+</p></div>
+
+</div>
+
+<div id="outline-container-3_12_3" class="outline-4">
+<h4 id="sec-3_12_3"><span class="section-number-4">3.12.3</span> Active/Parked slaves </h4>
+<div class="outline-text-4" id="text-3_12_3">
+
+<p>Only 7 slaves can be active, but up to 256 devices can be "parked" and
+need to be reactivated
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_13" class="outline-3">
+<h3 id="sec-3_13"><span class="section-number-3">3.13</span> RFID </h3>
+<div class="outline-text-3" id="text-3_13">
+
+<p>radio frequency identification
+</p></div>
+
+</div>
+
+<div id="outline-container-3_14" class="outline-3">
+<h3 id="sec-3_14"><span class="section-number-3">3.14</span> LAN Extension </h3>
+<div class="outline-text-3" id="text-3_14">
+
+
+</div>
+
+<div id="outline-container-3_14_1" class="outline-4">
+<h4 id="sec-3_14_1"><span class="section-number-4">3.14.1</span> Why? </h4>
+<div class="outline-text-4" id="text-3_14_1">
+
+<p>Too many computers, wires too short, appearance of a logical LAN
+across large area
+</p></div>
+
+</div>
+
+<div id="outline-container-3_14_2" class="outline-4">
+<h4 id="sec-3_14_2"><span class="section-number-4">3.14.2</span> Repeater </h4>
+<div class="outline-text-4" id="text-3_14_2">
+
+<p>Just connects segments, it's dumb and just retransmits everything it
+receives. Physical Layer
+</p></div>
+
+</div>
+
+<div id="outline-container-3_14_3" class="outline-4">
+<h4 id="sec-3_14_3"><span class="section-number-4">3.14.3</span> Bridge </h4>
+<div class="outline-text-4" id="text-3_14_3">
+
+<p>Understands frames, it forwards frames that are not collisions but
+only if it needs to (it knows the recipient is on the other side). It
+keeps track of the hardware addresses, so simultaneous use of both
+segments can be used in parallel. Data Link Layer
+</p></div>
+
+</div>
+
+<div id="outline-container-3_14_4" class="outline-4">
+<h4 id="sec-3_14_4"><span class="section-number-4">3.14.4</span> Switch </h4>
+<div class="outline-text-4" id="text-3_14_4">
+
+<p>Like a bridge between LANS. Data Link Layer
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3_15" class="outline-3">
+<h3 id="sec-3_15"><span class="section-number-3">3.15</span> VLAN (Virtual LAN) </h3>
+<div class="outline-text-3" id="text-3_15">
+
+
+</div>
+
+<div id="outline-container-3_15_1" class="outline-4">
+<h4 id="sec-3_15_1"><span class="section-number-4">3.15.1</span> Switch-Based </h4>
+<div class="outline-text-4" id="text-3_15_1">
+
+<p>Physical connections across multiple switches can be identified as
+part of a "VLAN" so that broadcasts work across them only
+</p></div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Network Layer </h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4_1" class="outline-3">
+<h3 id="sec-4_1"><span class="section-number-3">4.1</span> Purpose: </h3>
+<div class="outline-text-3" id="text-4_1">
+
+<p>Get packets from source to destination. Uses hops (machine-to-machine)
+and the data link layer (machine to machine on wire). This layer needs
+to know about the whole network.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_2" class="outline-3">
+<h3 id="sec-4_2"><span class="section-number-3">4.2</span> Store and Forward </h3>
+<div class="outline-text-3" id="text-4_2">
+
+<ol>
+<li>
+receive a packet
+</li>
+<li>
+find it's destination
+</li>
+<li>
+send it to the next router that is closer to the destination
+</li>
+</ol>
+
+</div>
+
+</div>
+
 <div id="outline-container-4_3" class="outline-3">
-<h3 id="sec-4_3"><span class="section-number-3">4.3</span> CSMA/CA - Collision Avoidance </h3>
+<h3 id="sec-4_3"><span class="section-number-3">4.3</span> Goals </h3>
 <div class="outline-text-3" id="text-4_3">
 
+<p>Services should be independent of the routing of packets. Transport
+layer shouldn't have to deal with the network at all.
+</p></div>
 
 </div>
 
-<div id="outline-container-4_3_1" class="outline-4">
-<h4 id="sec-4_3_1"><span class="section-number-4">4.3.1</span> RTS / CTS - request/clear to send </h4>
-<div class="outline-text-4" id="text-4_3_1">
+<div id="outline-container-4_4" class="outline-3">
+<h3 id="sec-4_4"><span class="section-number-3">4.4</span> Connectionless Service </h3>
+<div class="outline-text-3" id="text-4_4">
+
+<p>Uses datagrams; no two datagrams are related. 
+</p>
+</div>
+
+<div id="outline-container-4_4_1" class="outline-4">
+<h4 id="sec-4_4_1"><span class="section-number-4">4.4.1</span> Packet Switching </h4>
+<div class="outline-text-4" id="text-4_4_1">
+
+<p>Each switch knows enough about the network to be able to get any
+packet packet closer to its destination.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_4_2" class="outline-4">
+<h4 id="sec-4_4_2"><span class="section-number-4">4.4.2</span> Failure </h4>
+<div class="outline-text-4" id="text-4_4_2">
+
+<p>Router failure doesn't affect the packet transmission.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_5" class="outline-3">
+<h3 id="sec-4_5"><span class="section-number-3">4.5</span> Connection-Oriented Service </h3>
+<div class="outline-text-3" id="text-4_5">
+
+
+</div>
+
+<div id="outline-container-4_5_1" class="outline-4">
+<h4 id="sec-4_5_1"><span class="section-number-4">4.5.1</span> Virtual Circuit </h4>
+<div class="outline-text-4" id="text-4_5_1">
+
+<p>Once set up, must be notified by transport layer when to close the
+circuit. Each packet can just use a virtual circuit ID rather than a
+full address. BUT, every switch needs to know about the virtual
+circuit and reserve that slot.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_5_2" class="outline-4">
+<h4 id="sec-4_5_2"><span class="section-number-4">4.5.2</span> Failuire </h4>
+<div class="outline-text-4" id="text-4_5_2">
+
+<p>If a router fails, every single virtual circuit through that router
+dies.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_6" class="outline-3">
+<h3 id="sec-4_6"><span class="section-number-3">4.6</span> Routing </h3>
+<div class="outline-text-3" id="text-4_6">
+
+<p>Used mostly in WANs.
+</p>
+</div>
+
+<div id="outline-container-4_6_1" class="outline-4">
+<h4 id="sec-4_6_1"><span class="section-number-4">4.6.1</span> Types of switches </h4>
+<div class="outline-text-4" id="text-4_6_1">
+
+<p>Interior switches usually don't have computers connected and are just
+used to route packets along. Exterior routers are usually connected to
+a LAN which transports packets to/from its computers.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_6_2" class="outline-4">
+<h4 id="sec-4_6_2"><span class="section-number-4">4.6.2</span> Default Route </h4>
+<div class="outline-text-4" id="text-4_6_2">
+
+<p>When a switch doesn't know where to send a packet, it should have a
+backup destination to forward it along
+</p></div>
+
+</div>
+
+<div id="outline-container-4_6_3" class="outline-4">
+<h4 id="sec-4_6_3"><span class="section-number-4">4.6.3</span> Routing Tables </h4>
+<div class="outline-text-4" id="text-4_6_3">
+
+<p>Each switch can be assigned an identifier, and the switch "learns"
+what the shortest/fastest route to a certain switch.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_7" class="outline-3">
+<h3 id="sec-4_7"><span class="section-number-3">4.7</span> Congestion Control </h3>
+<div class="outline-text-3" id="text-4_7">
+
+<p>Mostly only cause of lost packets - most hardware is pretty solid, but
+can only handle congestion so well.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_8" class="outline-3">
+<h3 id="sec-4_8"><span class="section-number-3">4.8</span> QoS </h3>
+<div class="outline-text-3" id="text-4_8">
+
+
+</div>
+
+<div id="outline-container-4_8_1" class="outline-4">
+<h4 id="sec-4_8_1"><span class="section-number-4">4.8.1</span> Jitter </h4>
+<div class="outline-text-4" id="text-4_8_1">
+
+<p>Variation in delay. Delay is fine if it's consistent (in certain
+applications: video, audio) If we get a 1ms delay followed by a 1sec
+delay, we can't play video well (without a lot of buffering)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_9" class="outline-3">
+<h3 id="sec-4_9"><span class="section-number-3">4.9</span> Internetworking </h3>
+<div class="outline-text-3" id="text-4_9">
+
+<p>Connecting heterogeneous networks seamlessly to produce a virtual
+network. "Internet" is a nice clean virtual network that envelopes all
+these layer2 connected networks.
+</p>
+</div>
+
+<div id="outline-container-4_9_1" class="outline-4">
+<h4 id="sec-4_9_1"><span class="section-number-4">4.9.1</span> IP Addresses </h4>
+<div class="outline-text-4" id="text-4_9_1">
+
+<p>prefix: network number. suffix: host-ID
+</p><ul>
+<li id="sec-4_9_1_1">Class A <br/>
+'0' prefix, followed by 7bit prefix, followed by 24bit suffix.
+0 through 127 (128 nets, 16777216 hosts/net)
+</li>
+</ul>
+<ul>
+<li id="sec-4_9_1_2">Class B <br/>
+'10' prefix, followed by 14bit prefix, followed by 16bit suffix.
+128 through 191 (16384 nets, 65536 hosts/net)
+</li>
+</ul>
+<ul>
+<li id="sec-4_9_1_3">Class C <br/>
+'110' prefix, followed by 21bit prefix, followed by 8bit suffix.
+192 through 233 (2097152 nets, &hellip;)
+</li>
+</ul>
+<ul>
+<li id="sec-4_9_1_4">Class D <br/>
+'1110' multicast address
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-4_9_2" class="outline-4">
+<h4 id="sec-4_9_2"><span class="section-number-4">4.9.2</span> Class Addressing </h4>
+<div class="outline-text-4" id="text-4_9_2">
+
 
 </div>
 </div>
+
+</div>
+
+<div id="outline-container-4_10" class="outline-3">
+<h3 id="sec-4_10"><span class="section-number-3">4.10</span> Routers </h3>
+<div class="outline-text-3" id="text-4_10">
+
+<p>Each LAN gets its own "unique" IP address
+</p>
+</div>
+
+<div id="outline-container-4_10_1" class="outline-4">
+<h4 id="sec-4_10_1"><span class="section-number-4">4.10.1</span> Mapping hardware address to protocol address </h4>
+<div class="outline-text-4" id="text-4_10_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4_10_2" class="outline-4">
+<h4 id="sec-4_10_2"><span class="section-number-4">4.10.2</span> ARP </h4>
+<div class="outline-text-4" id="text-4_10_2">
+
+<p>Address Resolution Protocol. Broadcast message requesting a hardware
+address for a peer. All listening computers can store the senders
+address. Response is directed, not broadcast. ONLY NEED HWADDR FOR
+LOCAL NETWORKS, just use proto address otherwise.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_11" class="outline-3">
+<h3 id="sec-4_11"><span class="section-number-3">4.11</span> IP Datagrams </h3>
+<div class="outline-text-3" id="text-4_11">
+
+
+</div>
+
+<div id="outline-container-4_11_1" class="outline-4">
+<h4 id="sec-4_11_1"><span class="section-number-4">4.11.1</span> Virtual Packets </h4>
+<div class="outline-text-4" id="text-4_11_1">
+
+<p>Makes packets identical on all technologies, giving a seamless
+interaction between different types of machines. Connectionless
+service, and is a "best-effort deliver" - no guarantees of
+dropped/duplicated/out of order/corrupted packets.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_11_2" class="outline-4">
+<h4 id="sec-4_11_2"><span class="section-number-4">4.11.2</span> Fragmentation </h4>
+<div class="outline-text-4" id="text-4_11_2">
+
+<p>Virtual IP packets an be huge (64k) but most data links have much
+smaller MTU (maximum transmission unit). Routers can/have to fragment
+IP packets in to smaller packets. These packets now flow through the
+net as individual packets, only to be reassembled at the final
+destination.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_12" class="outline-3">
+<h3 id="sec-4_12"><span class="section-number-3">4.12</span> IPV6 </h3>
+<div class="outline-text-3" id="text-4_12">
+
+<p>128bits. 
+</p>
+</div>
+
+<div id="outline-container-4_12_1" class="outline-4">
+<h4 id="sec-4_12_1"><span class="section-number-4">4.12.1</span> Extensible Headers </h4>
+<div class="outline-text-4" id="text-4_12_1">
+
+<p>All headers put in the front of the virtual packet, so that additional
+headers can be created and used (extended..)
+</p></div>
+
+</div>
+
+<div id="outline-container-4_12_2" class="outline-4">
+<h4 id="sec-4_12_2"><span class="section-number-4">4.12.2</span> IPV6 Datagram </h4>
+<div class="outline-text-4" id="text-4_12_2">
+
+<p>Just base header, extension headers, and data. No checksum.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_12_3" class="outline-4">
+<h4 id="sec-4_12_3"><span class="section-number-4">4.12.3</span> Fragmentation </h4>
+<div class="outline-text-4" id="text-4_12_3">
+
+<p>Routers don't fragment anymore, the sending host is responsible now.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_12_4" class="outline-4">
+<h4 id="sec-4_12_4"><span class="section-number-4">4.12.4</span> Addressing </h4>
+<div class="outline-text-4" id="text-4_12_4">
+
+<p>Uses hex; groups of 16bits. 2085:FFFF:0:0 &hellip;
+Double colon denotes all 0 groups between. FF0C::F1 is valid
+</p></div>
+
+</div>
+
+<div id="outline-container-4_12_5" class="outline-4">
+<h4 id="sec-4_12_5"><span class="section-number-4">4.12.5</span> 6to4 net </h4>
+<div class="outline-text-4" id="text-4_12_5">
+
+<p>2002:x:y/48   - xy is 32bit ipv4 address
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_13" class="outline-3">
+<h3 id="sec-4_13"><span class="section-number-3">4.13</span> UDP and TCP </h3>
+<div class="outline-text-3" id="text-4_13">
+
+<p>Both transport layer protocols that use the network layer to send
+packets. End-to-end protocol.
+</p>
+</div>
+
+<div id="outline-container-4_13_1" class="outline-4">
+<h4 id="sec-4_13_1"><span class="section-number-4">4.13.1</span> Multiplexing </h4>
+<div class="outline-text-4" id="text-4_13_1">
+
+<p>Allows unique process identification using ports numbers
+</p></div>
+
+</div>
+
+<div id="outline-container-4_13_2" class="outline-4">
+<h4 id="sec-4_13_2"><span class="section-number-4">4.13.2</span> Packets </h4>
+<div class="outline-text-4" id="text-4_13_2">
+
+<p>TCP headers and data encapsulated by the IP protocol in the network
+layer.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4_14" class="outline-3">
+<h3 id="sec-4_14"><span class="section-number-3">4.14</span> NAT (network address translation) </h3>
+<div class="outline-text-3" id="text-4_14">
+
+<p>Allows multiple computers to use one public IP address. To use this we
+need to set up a private IP address space.
+</p></div>
+
+</div>
+
+<div id="outline-container-4_15" class="outline-3">
+<h3 id="sec-4_15"><span class="section-number-3">4.15</span> ICMP (Internet Control Message Protocol) </h3>
+<div class="outline-text-3" id="text-4_15">
+
+<p>Uses IP Packets; Reports errors, control issues.
+</p>
+</div>
+
+<div id="outline-container-4_15_1" class="outline-4">
+<h4 id="sec-4_15_1"><span class="section-number-4">4.15.1</span> Ping - echo/echo reply </h4>
+<div class="outline-text-4" id="text-4_15_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4_15_2" class="outline-4">
+<h4 id="sec-4_15_2"><span class="section-number-4">4.15.2</span> Source Quench - tell source to shut up </h4>
+<div class="outline-text-4" id="text-4_15_2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4_15_3" class="outline-4">
+<h4 id="sec-4_15_3"><span class="section-number-4">4.15.3</span> Time Exceeded - when TTL hits zero </h4>
+<div class="outline-text-4" id="text-4_15_3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4_15_4" class="outline-4">
+<h4 id="sec-4_15_4"><span class="section-number-4">4.15.4</span> Dest. Unreachable - all links to router down </h4>
+<div class="outline-text-4" id="text-4_15_4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4_15_5" class="outline-4">
+<h4 id="sec-4_15_5"><span class="section-number-4">4.15.5</span> Redirect - Hints to a host that a different route would be faster </h4>
+<div class="outline-text-4" id="text-4_15_5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_16" class="outline-3">
+<h3 id="sec-4_16"><span class="section-number-3">4.16</span> DHCP </h3>
+<div class="outline-text-3" id="text-4_16">
+
+<p>Dynamic Host Configuration Protocol Kind of like ARP, but gives some
+more information such as default gateway, nameserver, etc.
+</p></div>
 </div>
 
 </div>
@@ -1127,7 +1914,6 @@ Server: &lt;name&gt;
 Content-Length: &lt;bytes&gt;
 Content-Type: &lt;mime-type&gt;
 </p>
-
 </div>
 </div>
 
@@ -1251,12 +2037,21 @@ char*. Family is AF<sub>INET</sub>.
 <p>Network endian ip to ascii.
 </p></div>
 </div>
+
+</div>
+
+<div id="outline-container-5_5" class="outline-3">
+<h3 id="sec-5_5"><span class="section-number-3">5.5</span> Ncat </h3>
+<div class="outline-text-3" id="text-5_5">
+
+<p>port@host:filepath to use it
+</p></div>
 </div>
 </div>
 <div id="postamble">
 <p class="author"> Author: Matt Forbes
 </p>
-<p class="date"> Date: 2011-01-28 11:13:00 PST</p>
+<p class="date"> Date: 2011-02-17 14:57:58 PST</p>
 <p class="creator">HTML generated by org-mode 7.4 in emacs 23</p>
 </div>
 </div>
