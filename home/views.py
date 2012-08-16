@@ -18,6 +18,6 @@ def loc(request, id):
     points = data['points']
     max_pt = points[0]
     for point in points:
-        if (point['type]' == 'TripPoint') and (point['deltaTime'] > max_pt['deltaTime']):
+        if (point['type'] == 'TripPoint') and (point['deltaTime'] > max_pt['deltaTime']):
             max_pt = point
     return HttpResponse(simplejson.dumps(max_pt), mimetype='application/json')
