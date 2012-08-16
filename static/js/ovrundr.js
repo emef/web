@@ -15,7 +15,7 @@ function update_map(lat, lng) {
     var point = new google.maps.LatLng(lat, lng);
     var map_container = document.getElementById('map');
     var options = {
-        zoom: 16,
+        zoom: 20,
         center: point,
         mapTypeId: google.maps.MapTypeId.ROADMAP
         // mapTypeControl: true,
